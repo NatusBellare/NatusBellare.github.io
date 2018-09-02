@@ -116,6 +116,12 @@ button:focus
 	border-radius: 5px
 	float: left
 	padding: 5px 20px
+.nav__eng-page-ru
+	background-color: #121421
+	color: #41445b
+.nav__eng-page
+	background-color: #fff
+	color: #000
 .wrapper-screen__yellow-block
 	background-color: #f2a929
 	width: 455px
@@ -141,13 +147,16 @@ button:focus
 	width: 23px
 	background-position: 0 -49px
 	float: left
-.more-information__text
+.more-information
+	color: #f3f6fc
+body .more-information .more-information__text
 	font-family: 'Roboto-Medium'
 	color: #f3f6fc
 	font-size: 16px
 	float: left
 	margin-left: 8px
 	text-decoration: none
+	cursor: pointer
 	&:hover
 		text-decoration: none
 		color: #d29121
@@ -609,6 +618,21 @@ button:focus
 	height: 20px
 	background-color: #a4a5a9
 	top: -2px
+.buy-token-link
+	color: inherit
+	text-decoration: none
+	&:hover
+		color: inherit
+		text-decoration: none
+	&:visited
+		color: inherit
+.value-buy__begin-line
+	position: absolute
+	left: 0px
+	width: 2px
+	height: 20px
+	background-color: #e09c25
+	top: -2px
 .buy-tokens
 	float: left
 	background-color: #f2a929
@@ -622,6 +646,8 @@ button:focus
 	margin-left: 38px
 	margin-top: 11px
 	cursor: pointer
+.buy-tokens:hover
+	background-color: #c28211
 .how-it-work-img
 	display: none
 	margin-top: 30px
@@ -664,7 +690,7 @@ button:focus
 	border: 0px
 	background-color: #f5f5f5
 	border-radius: 5px 0 0 5px 
-	padding: 10px 22px
+	padding: 10px 21px
 	display: block
 	float: left
 	cursor: pointer
@@ -676,7 +702,7 @@ button:focus
 	border: 0px
 	background-color: #9194a5
 	border-radius: 0px 5px 5px 0px 
-	padding: 10px 22px
+	padding: 10px 21px
 	display: block
 	float: left
 	cursor: pointer
@@ -749,6 +775,8 @@ button:focus
 	position: absolute
 	top: -15px
 	z-index: 5
+	width: 233px
+	position: relative
 .grafic-block__line
 	width: 154px
 	background-color: #6c79c3
@@ -756,6 +784,11 @@ button:focus
 	display: inline-block
 	border-radius: 0 5px 5px 0
 	margin-left: 15px
+	position: absolute
+	right: 0px
+	top: 10px
+.grafic-block__line_width
+	width: 116px
 .grafic .slick-next
 	top: -65px
 .grafic .slick-prev
@@ -778,6 +811,12 @@ button:focus
 	padding-top: 150px
 .grafic .sl-slide-padding-1
 	padding-top: 185px
+.grafic .sl-slide-padding-03
+	padding-top: 220px
+.grafic .sl-slide-padding-02
+	padding-top: 255px
+.grafic .sl-slide-padding-01
+	padding-top: 290px
 .nav__logo
 	text-decoration: none
 #touch-menu
@@ -821,7 +860,7 @@ button:focus
 	display: none
 .nav__logo_mobile
 	display: none
-.active a
+li.active a
 	color: #fff
 .questions__toggle-text
 	display: none
@@ -831,6 +870,10 @@ button:focus
 	font-family: 'roboto-example'
 .nav__eng-mobile
 	display: none
+	text-decoration: none
+	&:hover
+		text-decoration: none
+		color: #41445b
 .row-dont-see-devise
 	display: none
 .slide-circle
@@ -857,4 +900,184 @@ label.error
 	display: block
 #form input.error
 	background-color: #261614
+.wrapper-addventage__text span
+	font-weight: 700
+	font-size: 25px
+	font-family: 'roboto-example'
+	position: relative
+	display: inline-block
+	line-height: 0
+	top: 2px
+	left: 1px
+.wrapper-screen__change-text
+	width: 500px
+.appear-block
+	width: 266px
+	background-color: #1f233f
+	height: 350px
+	padding: 27px
+	position: fixed
+	left: calc(50% - 133px)
+	top: calc(50% - 175px)
+	z-index: 10
+	overflow: hidden
+	border-radius: 5px
+	display: none
+.appear-block-video
+	width: 266px
+	height: 300px
+	background-color: #1f233f
+	padding: 27px
+	position: fixed
+	left: calc(50% - 133px)
+	top: calc(50% - 175px)
+	z-index: 10
+	overflow: hidden
+	border-radius: 5px
+	display: none
+	text-align: center
+	box-shadow: 0 0 50px rgba(0,0,0, 0.9)
+.wrapper-appear-block__text
+	overflow: hidden
+	width: 215px
+	height: 235px
+	position: relative
+	z-index: 9
+	box-shadow: inset 0px -8px 6px 0px rgba(31,35,63, 0.9)
+.appear-block-cripto
+	width: 266px
+	background-color: #1f233f
+	height: 350px
+	padding: 27px
+	position: fixed
+	left: calc(50% - 133px)
+	top: calc(50% - 175px)
+	z-index: 10
+	overflow: hidden
+	border-radius: 5px
+	display: none
+.appear-block__title
+	font-family: 'GothamPro-Bold'
+	color: #f3f6fc
+	font-size: 20px
+	text-align: center
+	margin-bottom: 7px
+.appear-block__text
+	color: #f3f6fc
+	font-size: 15px
+	font-family: 'roboto-example'
+	max-height: 230px
+	overflow-y: scroll
+	box-sizing: content-box
+	position: absolute
+	right: -17px
+.appear-block__text-video
+	color: #f3f6fc
+	font-size: 15px
+	font-family: 'roboto-example'
+	box-sizing: content-box
+.appear-block__text-cripto
+	color: #f3f6fc
+	font-size: 15px
+	font-family: 'roboto-example'
+	box-sizing: content-box
+.close-appear
+	position: absolute
+	right: 15px
+	top: 15px
+	cursor: pointer
+.close-appear-video
+	position: absolute
+	right: 15px
+	top: 15px
+	cursor: pointer
+.close-appear-cripto
+	position: absolute
+	right: 15px
+	top: 15px
+	cursor: pointer
+.wrapper-screen__fiat-money
+	cursor: pointer
+.wrapper-screen__cripto-block
+	cursor: pointer
+.name-cripto__short-name
+	font-family: 'GothamPro-Bold'
+	font-size: 16
+	color: #f3f6fc
+	float: left
+.name-cripto
+	margin-top: 15px
+.name-cripto__icon-name
+	background-image: url(../img/cripto-sprite.png)
+	background-repeat: no-repeat
+	width: 26px
+	height: 26px
+	display: inline-block
+	float: left
+	margin-left: 15px
+	margin-right: 12px
+.name-cripto__icon-name1
+	background-position: 0 0
+.name-cripto__icon-name2
+	background-position: 0 -41px
+.name-cripto__icon-name3
+	background-position: 0 -81px
+.name-cripto__full-name
+	font-family: 'roboto-example'
+	font-size: 15px
+	color: #f3f6fc
+	display: inline-block
+.name-cripto_margin-left
+	margin-left: 36px
+	margin-top: 20px
+.name-cripto_margin-left1
+	margin-left: 36px
+.name-cripto_margin-left2
+	margin-left: 22px
+.get-pdf-email
+	width: 100%
+	background-color: #151729
+	height: 39px
+	margin-top: 18px
+	border: none
+	padding: 5px
+	color: #f3f6fc
+	&::placeholder
+		text-align: center
+		font-family: 'roboto-example'
+		font-size: 15px
+		color: #3f4463
+		position: relative
+		top: -4px
+.a-eng
+	color: inherit
+	text-decoration: none
+	&:hover
+		color: inherit
+		text-decoration: none
+.a-ru
+	color: inherit
+	text-decoration: none
+	&:hover
+		color: inherit
+		text-decoration: none
+.button-get-pdf
+	width: 100%	
+	background-color: #f2a929
+	border-radius: 5px
+	color: #121421
+	font-family: 'roboto-example'
+	text-align: center
+	font-weight: 700
+	border: none
+	height: 40px
+	margin-top: 15px
+	font-size: 15px
+.grafic-title-block
+	color: #f3f6fc
+	font-family: 'GothamPro-Bold'
+	font-size: 18px
+	padding-left: 18px
+	position: relative
+	top: -5px
 @import "media" // Always at the end
