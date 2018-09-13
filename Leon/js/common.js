@@ -324,7 +324,7 @@ $(document).ready(function(){
       width: "toggle"
     });
   });
-  if (wid <= 1025 || hig <= 630) {
+  if (wid <= 1025 || hig <= 625) {
   $('.nav__link-menu').click(function(){
     $(menu).animate({
       width: "toggle"
