@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "RobotoSlab";
+    src: url("RobotoSlabRegular.eot");
+    src: url("RobotoSlabRegular.eot?#iefix")format("embedded-opentype"),
+    url("RobotoSlabRegular.woff") format("woff"),
+    url("RobotoSlabRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+/* font-family: "RobotoSlabLight"; */
+@font-face {
+    font-family: "RobotoSlab";
+    src: url("RobotoSlabLight.eot");
+    src: url("RobotoSlabLight.eot?#iefix")format("embedded-opentype"),
+    url("RobotoSlabLight.woff") format("woff"),
+    url("RobotoSlabLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 300;
+}
+/* font-family: "RobotoSlabBold"; */
+@font-face {
+    font-family: "RobotoSlab";
+    src: url("RobotoSlabBold.eot");
+    src: url("RobotoSlabBold.eot?#iefix")format("embedded-opentype"),
+    url("RobotoSlabBold.woff") format("woff"),
+    url("RobotoSlabBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+}
+
+/* font-family: "RobotoCondensedRegular"; */
+@font-face {
+    font-family: "RobotoCondensed";
+    src: url("RobotoCondensedRegular/RobotoCondensedRegular.eot");
+    src: url("RobotoCondensedRegular/RobotoCondensedRegular.eot?#iefix")format("embedded-opentype"),
+    url("RobotoCondensedRegular/RobotoCondensedRegular.woff") format("woff"),
+    url("RobotoCondensedRegular/RobotoCondensedRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+/* font-family: "RobotoCondensedLight"; */
+@font-face {
+    font-family: "RobotoCondensed";
+    src: url("RobotoCondensedLight/RobotoCondensedLight.eot");
+    src: url("RobotoCondensedLight/RobotoCondensedLight.eot?#iefix")format("embedded-opentype"),
+    url("RobotoCondensedLight/RobotoCondensedLight.woff") format("woff"),
+    url("RobotoCondensedLight/RobotoCondensedLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 300;
+}
+/* font-family: "RobotoCondensedBold"; */
+@font-face {
+    font-family: "RobotoCondensed";
+    src: url("RobotoCondensedBold/RobotoCondensedBold.eot");
+    src: url("RobotoCondensedBold/RobotoCondensedBold.eot?#iefix")format("embedded-opentype"),
+    url("RobotoCondensedBold/RobotoCondensedBold.woff") format("woff"),
+    url("RobotoCondensedBold/RobotoCondensedBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+}

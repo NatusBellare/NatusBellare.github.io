@@ -1,0 +1,1490 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+html, body
+
+body
+	font-size: 17px
+	min-width: 320px
+	position: relative
+	color: #fff
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	input, textarea
+			border: #666 1px solid
+			outline: none
+			&:focus
+				color: #000
+				.fa-search
+					color: #fff
+			&:focus:required:invalid
+				border-color: red
+			&:required:valid
+				border-color: green
+.button-line input
+	outline: none
+	color: #fff
+	&:focus
+		color: #fff
+.footer input
+	outline: none
+	color: #fff
+	&:focus
+		color: #fff
+.user-form textarea
+	margin-top: 10px
+	height: 44px
+button
+	cursor: pointer
+.static
+	position: static
+.clearfix::after
+    content: ""
+    display: table
+    clear: both
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+.fixed
+	position: fixed
+	background-color: #263e90
+	font-size: 12
+header
+	background-color: #263e90
+.header
+	background-image: url(../img/bg1.jpg)
+	background-repeat: no-repeat
+	background-position: center 0
+	background-color: 
+	height: 768px
+.wrapper-top-line
+	height: 76px
+.top-line
+	width: 100%
+	z-index: 5
+	height: 77px
+	top: 0
+.text-center
+	text-align: center
+.logo
+	padding-top: 10px
+.nav li
+	display: inline-block
+	font-size: 13px
+	padding-top: 30px
+	margin-left: 50px
+	font-family: "HelveticaNeueCyr-Bold"
+#touch-menu
+	display: none
+	color: #ffffff
+	font-family: "goemetria"
+	text-decoration: none
+	text-align: center
+	height: 40px
+	line-height: 40px
+	z-index: 5
+	position: relative
+.navigation
+	display: none
+	width: 100%
+	text-align: center
+	font-size: 40px
+	margin-top: 30px
+	margin-bottom: 30px
+.container-button
+  	display: inline-block
+  	cursor: pointer
+  	padding-top: 9px
+.nav a
+	color: inherit
+.bar1, .bar2, .bar3
+  	width: 48px
+  	height: 9px
+  	background-color: #fff
+  	margin: 6px 0
+  	transition: 0.4s
+.number-block
+	padding-top: 12px
+	display: block
+	font-size: 20px
+	width: 100%
+	padding-left: 40px
+	.call-back
+		font-size: 13px
+		margin-top: -4px
+		font-family: "HelveticaRegular"
+		letter-spacing: normal
+	span
+		float: left
+		margin-left: 10px
+	img
+		float: left
+		margin-top: 10px
+.header .h1
+	font-size: 69px
+	margin-top: 100px
+	span
+		display: block
+	.for-bussines
+		font-size: 49px
+		margin-top: -45px
+		letter-spacing: 2px
+	.begin-get
+		font-size: 22px
+		font-family: "HelveticaNeueCyr-Thin"
+		font-weight: 100
+.text-bold
+	font-family: "HelveticaNeueCyr-Heavy"
+	font-size: 14px
+.block-study
+	font-size: 14px
+.wrapp-ok
+	float: left
+	margin-top: 40px
+.study-text
+	float: left
+	margin-left: 45px
+	width: 230px
+	line-height: 1.30
+	font-size: 16px
+	font-family: "HelveticaNeueCyr-Light"
+	font-weight: 100
+.number-block span
+	margin-top: 0px
+	font-family: "HelveticaNeueCyr-Bold"
+	font-size: 20px
+	letter-spacing: -0.2px
+.ok
+	width: 35px
+	height: 35px
+	background-image: url(../img/ok.png)
+	background-repeat: no-repeat
+	float: left
+.number-block
+	font-size: 13px
+.base-goal
+	color: #26243b
+	font-size: 17px
+	line-height: 1.30
+	.h1
+		color: $accent
+		font-size: 44px
+		width: 100%
+		font-weight: 700
+		margin-top: 86px
+		font-family: "HelveticaNeueCyr-Bold"
+		span
+			font-weight: 100
+			font-size: 23px
+			display: block
+			margin-top: -6px
+			margin-bottom: 40px
+			font-family: "HelveticaNeueCyr-Light"
+.sp
+	margin-top: 105px
+.wrapper-adventege
+	margin-top: 115px
+	width: 100%
+	border-right: 1px solid #cbcbcb
+	margin-bottom: 125px
+	padding-right: 15px
+.wrapper-adventege-last
+	border-right: none
+.value
+	font-size: 80px
+	color: $light-blue
+	float: left
+	line-height: 0.7
+	font-family: "HelveticaNeueCyr-Medium"
+.pair
+	float: left
+	margin-left: 28px
+.top-adv
+	float: left
+	width: 100%
+.value-map
+	font-size: 27px
+	color: #26243b
+	font-weight: 700
+	margin-top: 20px
+	margin-bottom: 30px
+	float: left
+	width: 100%
+	font-family: "HelveticaNeueCyr-Bold"
+.descrip-adv
+	display: block
+	width: 100%
+.advice
+	background-image: url(../img/bg2.png)
+	.h1
+		color: $accent
+		font-size: 44px
+		width: 100%
+		font-weight: 700
+		margin-top: 86px
+		font-family: "HelveticaNeueCyr-Bold"
+		span
+			font-weight: 100
+			font-size: 23px
+			display: block
+			margin-top: -6px
+			margin-bottom: 40px
+			font-family: "HelveticaNeueCyr-Light"
+.wrapper-choise
+	width: 100%
+	background-color: #1f285e
+	text-align: center
+.advice .slick-slide img
+	width: 100%
+.couch
+	width: 100%
+.advice .sl__slide
+	padding: 0px
+	margin-left: 10px
+	margin-right: 10px
+.remove-padding
+	padding: 0 5px
+.sl12
+	margin-top: 30px
+	margin-bottom: 100px
+.slick-dots
+	display: none !important
+.slick-prev:before
+	display: none
+.slick-next:before
+	display: none
+.sl12 .sl .slick-prev
+	background-image: url("../img/arrow.png")
+	width: 55px
+	height: 235px
+	position: absolute
+	top: 10px
+	left: 10px
+	display: none !important
+.advice .sl12 .sl .slick-next
+	background-image: url("../img/arrow.png")
+	width: 55px
+	height: 235px
+	background-position: -52px 0
+	top: 10px
+	right: 0px
+	margin-right: 0.8%
+	display: none !important
+.advice .sl12 .sl:hover .slick-next
+	display: inline-block !important
+.advice .sl12 .sl:hover .slick-prev
+	display: inline-block !important
+.scils
+	width: 237px
+	margin: 25px auto 15px auto
+	font-size: 20px
+	text-align: left
+	font-family: "HelveticaNeueCyr-Medium"
+	line-height: 1.1
+.descrip-scils
+	width: 237px
+	margin: 0px auto 28px auto
+	font-size: 17px
+	font-weight: 100
+	text-align: left
+	line-height: 1.3
+.further
+	width: 240px
+	height: 52px
+	background-color: rgba(0, 0, 0, 0)
+	border: 2px solid #4277ff
+	font-size: 13px
+	color: #fff
+	margin-bottom: 45px
+	&:hover
+		background-color: #4277ff
+.you-get
+	.h1
+		color: $accent
+		font-size: 44px
+		width: 100%
+		font-weight: 700
+		margin-top: 86px
+		font-family: "HelveticaNeueCyr-Bold"
+		span
+			font-weight: 100
+			font-size: 23px
+			display: block
+			margin-top: -6px
+			margin-bottom: 40px
+			font-family: "HelveticaNeueCyr-Light"
+.video
+	height: 224px
+	margin-top: 20px
+	cursor: pointer
+	img
+		width: 100%
+		height: 100%
+	iframe
+		display: none
+.podv
+	height: 62px
+	background-image: url("../img/bg2.png")
+.effect
+	background-color: #1f285e
+	height: 320px
+	position: relative
+	background-image: url(../img/effect.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center center
+.be-sure
+	color: #fff
+	font-size: 26px
+	margin-top: 75px
+	line-height: 1.3
+	font-family: "HelveticaNeueCyr-Bold"
+	span
+		color: #4277ff
+		display: block
+		font-family: "HelveticaNeueCyr-Light"
+.demonstration
+	color: #fff
+	font-size: 15px
+.want-get
+	height: 52px
+	width: 267px
+	background-color: #3870ff
+	text-transform: uppercase
+	font-size: 14px
+	border: none
+	color: #fff
+	font-weight: 700
+	display: block
+	margin: 25px auto 0
+	font-family: "HelveticaNeueCyr-Bold"
+	&:hover
+		text-decoration: underline
+.result
+	background-color: #ededed
+	background-image: url(../img/shark-fon.png)
+	background-repeat: no-repeat
+	background-position: center 550px
+	.h1
+		color: $accent
+		font-size: 44px
+		width: 100%
+		font-weight: 700
+		margin-top: 86px
+		font-family: "HelveticaNeueCyr-Bold"
+		span
+			font-weight: 100
+			font-size: 23px
+			display: block
+			margin-top: -6px
+			margin-bottom: 40px
+			font-family: "HelveticaNeueCyr-Light"
+.wrapper-result
+	height: 358px
+	width: 254px
+	background-image: url(../img/photo-phone.jpg)
+	background-color: #1f285e
+	margin-bottom: 20px
+	background-position: center center
+	margin-left: auto
+	margin-right: auto
+.result-remove-padding
+	padding-right: 5px
+	padding-left: 5px
+.block-who
+	background-color: rgba(27, 34, 82, .8)
+	height: 65px
+	padding: 18px 25px
+	margin-top: -65px
+	z-index: 12
+	position: relative
+.foto-result
+	position: relative
+.wrapper-result:hover .podlojka
+	background-image: url(../img/podlojka.png)
+	background-position: center center
+	background-color: #000
+	z-index: 11
+	background-repeat: no-repeat
+	position: relative
+	width: 100%
+	margin-top: -316px
+	height: 316px
+	opacity: .7
+.name-couch
+	font-size: 14px
+	font-family: "HelveticaNeueCyr-Heavy"
+.prof
+	font-size: 12px
+	display: block
+	margin-top: -5px
+.map_on 
+	padding-top: 10px
+.map_on img
+	float: left
+	margin-left: 25px
+.map_on span
+	float: left
+	margin-left: 15px
+	font-family: "HelveticaNeueCyr-Light"
+	font-size: 15px
+.get-advice
+	height: 52px
+	width: 300px
+	background-color: #3870ff
+	text-transform: uppercase
+	font-size: 14px
+	border: none
+	color: #fff
+	font-family: "HelveticaNeueCyr-Bold"
+	display: block
+	margin: auto
+	&:hover
+		background-color: #1F285E
+.teoria
+	color: #60647c
+	.h1
+		color: $accent
+		font-size: 44px
+		width: 100%
+		font-weight: 700
+		margin-top: 68px
+		font-family: "HelveticaNeueCyr-Bold"
+		span
+			font-weight: 100
+			font-size: 23px
+			display: block
+			margin-top: -6px
+			margin-bottom: 40px
+			font-family: "HelveticaNeueCyr-Light"
+.wrapper-teoria
+	background-color: #f1f1f1
+	width: 100%
+	margin-bottom: 35px
+	img
+		width: 100%
+.calendar
+	width: 30px
+	height: 20px
+	background-image: url(../img/icon-how.png)
+	background-repeat: no-repeat
+.conclusion
+	padding-bottom: 20px
+.view
+	width: 30px
+	height: 20px
+	background-image: url(../img/icon-how.png)
+	background-repeat: no-repeat
+	background-position: -29px 0
+.base-title
+	font-size: 17px
+	margin: 20px 25px 15px 25px
+	line-height: 1.3
+	cursor: pointer
+	font-family: "HelveticaNeueCyr-Medium"
+	&:hover
+		color: #27253B
+.discrip-how
+	margin: 0 25px 25px 25px
+	font-size: 17px
+	line-height: 1.3
+.calendar
+	float: left
+	margin-left: 25px
+.date
+	float: left
+	color: #99999b
+.view
+	float: left
+	margin-left: 35px
+.value-view
+	float: left
+	color: #99999b
+.button-line
+	background-image: url(../img/bottom-line.jpg)
+	background-position: 50% 0
+.block-do-it
+	margin-top: 50px
+	margin-bottom: 40px
+	span
+		font-family: "HelveticaNeueCyr-Heavy"
+.soc-icon .svg-inline--fa
+	color: #41476f
+	margin-right: 28px
+	font-size: 18px
+.join .fa-arrow-right
+	color: #41476f
+	margin-top: 20px
+	font-size: 37px
+	margin-left: 85px
+.fa-search
+	color: #3870FF
+	position: relative
+	top: -30px
+	left: 90%
+form .fa-arrow-right
+	color: #41476f
+	font-size: 37px
+	width: 50px
+	position: relative
+.form-button
+	border: none
+	background-color: rgba(0,0,0,0)
+	position: relative
+	top: 0px
+	left: 90%
+	&:focus
+		outline: 0px
+.svg-inline--fa:hover
+	color: #3870ff
+.svg-inline--fa
+	cursor: pointer
+.soc-icon
+	margin-top: 40px
+	margin-left: 63px
+.icon-bottom-line
+	width: 60px
+	height: 52px
+	background-image: url(../img/icon-act.png)
+	background-repeat: no-repeat
+	float: left
+	margin-right: 35px
+.follow
+	margin-left: 35px
+	font-size: 14px
+	color: #d2d2d2
+	line-height: 1.2
+.icon-bottom-line1
+	background-position: 0 0
+.icon-bottom-line2
+	background-position: -77px -2px
+.icon-bottom-line3
+	background-position: -156px 2px
+
+.footer
+	background-color: #1f285e
+	margin-top: -1px
+.bottom-nav
+	input
+		width: 100%
+		background-color: #3d4573
+		padding: 5px 10px
+		font-size: 13px
+		border: none
+		margin-top: 50px
+.bottom-nav-border
+	height: 1px
+	background-color: #284299
+	margin-top: 20px
+.bottom-nav .base-title-footer
+	color: #fff
+	font-size: 14px
+	font-family: "HelveticaNeueCyr-Heavy"
+	margin-bottom: 15px
+.bottom-nav ul
+	list-style: none
+	margin-top: 45px
+	padding-left: 0px
+.bottom-nav a
+	color: inherit
+	text-decoration: none
+.bottom-nav li
+	font-size: 15px
+	color: #9599b3
+	&:hover
+		color: #fff
+.contact-form input
+	font-size: 13px
+	color: #fff
+	background-color: rgba(0, 0, 0, 0)
+	border: none
+	border-bottom: 1px solid #60647c
+	width: 255px
+	float: right
+	padding: 10px 0
+.contact-form input:placeholder
+	color: #60647c
+.who-we
+	color: #fff
+	font-size: 14px
+	font-weight: 700
+	margin-top: 45px
+	float: left
+	font-family: "HelveticaNeueCyr-Heavy"
+.bottom-contact
+	color: #fff
+	font-size: 14px
+	font-weight: 700
+	margin-top: 45px
+	float: right
+.shark-place-bottom
+	font-size: 14px
+	float: left
+	color: #3870ff
+	margin-top: 36px
+	letter-spacing: 0.2px
+.polit
+	color: #fff
+	font-size: 14px
+	float: left
+.plan-trainer-scils a
+	color: inherit
+	text-decoration: none
+.plan-trainer-scils a:hover
+	color: #212a63
+.map-site
+	float: right
+	font-size: 14px
+	color: #fff
+	margin-right: 8px
+	margin-right: 102px
+	padding-bottom: 40px
+.icon-phone
+	float: left
+.number-bottom
+	float: left
+	margin-left: 10px
+	font-size: 19px
+	font-family: "HelveticaNeueCyr-Bold"
+.block-bottom-number
+	margin-top: 53px
+.map-place
+	margin-top: 53px
+.polit a
+	color: #fff
+.map-site a
+	color: #fff
+.icon-map
+	float: left
+.text-place
+	position: relative
+	top: 5px
+	font-size: 16px
+	float: left
+	margin-left: 10px
+//trainer
+.trainer-olga
+	background-color: #4277ff
+	font-family: "HelveticaNeueCyr-Light"
+	ul
+		list-style: none
+		margin-top: 43px
+		padding-left: 0px
+		margin-bottom: 0px
+	li
+		display: inline-block
+		padding-right: 22px
+	a
+		color: inherit
+		text-decoration: underline
+		font-family: "HelveticaNeueCyr-Light"
+		font-size: 16px
+		&:hover
+			text-decoration: none
+	p
+		line-height: 1.2
+		font-size: 17px
+.trainers-h1
+	font-size: 44px
+	padding-top: 0px
+	margin-bottom: 0px
+	font-family: "HelveticaNeueCyr-Bold"
+	margin-bottom: -5px
+.olga-big-foto
+	width: 100%
+.who-trainer
+	width: 100%
+	margin-bottom: 65px
+.who-trainer div
+	float: left
+	img
+		margin-right: 10px
+	&:first-child
+		margin-right: 27px
+		font-size: 27px
+	&:last-child
+		font-size: 23px
+		padding-top: 5px
+.trainer-experience
+	color: #000
+	line-height: 1.3
+	padding-top: 20px
+.trainers-skill-left
+	padding-left: 20px
+.trainers-skill-right
+	float: right
+.text-trainer-skill
+	width: 440px
+	margin-top: 25px
+	color: #4277ff
+.last-text-skill
+	margin-bottom: 50px
+.color-span-trainer
+	color: #000
+.circle
+	width: 6px
+	height: 6px
+	background-color: #4277ff
+	border-radius: 3px
+	display: inline-block
+	margin-right: 16px
+	position: relative
+	top: -20px
+.right-skill
+	margin-left: 50px
+.plan-trainer
+	background-color: #ededed
+	color: #23222e
+	.plan-h2
+		font-size: 44px
+		line-height: 1
+		margin-top: 50px
+		font-family: "HelveticaNeueCyr-Bold"
+	.master-class
+		font-size: 23px
+		line-height: 1
+		font-family: "HelveticaNeueCyr-Light"
+		margin-bottom: 50px
+.specialization
+	color: #23222e
+	.plan-h2
+		font-size: 44px
+		line-height: 1
+		margin-top: 80px
+		font-family: "HelveticaNeueCyr-Bold"
+	.master-class
+		font-size: 23px
+		line-height: 1
+		font-family: "HelveticaNeueCyr-Light"
+.block-trainer-specialization
+	width: 347px
+	height: 438px
+	background-color: #ededed
+	margin-top: 60px
+	margin-bottom: 170px
+.top-block-trainer-specialization
+	width: 100%
+	height: 144px
+	background-color: #212a63
+	text-align: center
+.circle-pair
+	margin-top: 20px
+.skill-specialization
+	width: 100%
+	text-align: center
+	margin-top: 77px
+	font-family: "HelveticaNeueCyr-Bold"
+	font-size: 25px
+	line-height: 1.2
+	width: 90%
+	margin-left: auto
+	margin-right: auto
+.skill-for
+	text-align: center
+	font-size: 16px
+	font-family: "HelveticaNeueCyr-Light"
+	width: 90%
+	margin-left: auto
+	margin-right: auto
+.more-description
+	height: 52px
+	width: 240px
+	margin-top: 60px
+	background-color: #3870ff
+	text-transform: uppercase
+	font-size: 14px
+	border: none
+	color: #fff
+	font-family: "HelveticaNeueCyr-Bold"
+	display: block
+	margin-left: auto
+	margin-right: auto
+	&:hover
+		background-color: #1F285E
+		text-decoration: underline
+.wrapper-choise-deal
+	text-align: center
+	width: 100%
+	background-color: #ededed
+.plan-trainer-scils
+	width: 70%
+	margin: 25px auto 15px auto
+	font-size: 20px
+	text-align: left
+	font-family: "HelveticaNeueCyr-Medium"
+	line-height: 1.1
+	text-align: center
+.plan-trainer-descrip-scils
+	width: 80%
+	margin: 0px auto 45px auto
+	font-size: 17px
+	font-weight: 100
+	text-align: left
+	line-height: 1.3
+	padding-bottom: 60px
+.plan-trainer .sl12
+	margin-bottom: 0px
+	margin-top: 0px
+.plan-trainer img
+	width: 100%
+.blue-fon
+	width: 100%
+	background-color: blue
+	height: 51.6%
+	margin-top: 30px
+.row.no-gutters 
+  	margin-right: 0;
+  	margin-left: 0;
+  	& > [class^="col-"],
+  	& > [class*=" col-"] 
+   		 padding-right: 0;
+   		 padding-left: 0;
+.wrapper-plan-trainer
+	background-color: blue
+	height: 333px
+	margin-bottom: 250px
+	background-image: url(../img/fon-plan.jpg)
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+.wrapper-plan-big
+	background-color: #ededed
+	height: 522px
+.plan-trainer .sl12 .sl .slick-prev
+	background-image: url("../img/slider_left.png")
+	background-repeat: no-repeat
+	background-position: center center
+	background-color: rgba(33, 42, 99, 0.6)
+	width: 55px
+	height: 333px
+	position: absolute
+	top: 10px
+	left: 0px
+	display: none !important
+.plan-trainer .sl12 .sl .slick-next
+	background-image: url("../img/slider_right.png")
+	background-repeat: no-repeat
+	background-position: center center
+	background-color: rgba(33, 42, 99, 0.6)
+	width: 55px
+	height: 333px
+	top: 10px
+	right: -3.745%
+	margin-right: 3.7%
+	display: none !important
+.plan-trainer .sl12 .sl:hover .slick-next
+	display: inline-block !important
+.plan-trainer .sl12 .sl:hover .slick-prev
+	display: inline-block !important
+	//AboutCompany
+.wrapper-top-line-about
+	background: #263e90
+.wrapper-top-line-about .top-line
+	z-index: 12
+.composition-about
+	background: #4277ff
+	line-height: 1.2
+.h1-story
+	font-size: 44px
+	font-weight: bold
+	font-family: "HelveticaNeueCyr-Bold"
+	margin-bottom: 60px
+	margin-top: 16px
+.span-url a
+	color: #f8faff
+.span-url
+	font-size: 16px
+	margin-top: 46px
+	text-decoration: underline
+	font-family: "HelveticaNeueCyr-Light"
+.span-url
+	&:hover
+	text-decoration:none
+.about-story
+	padding-left: 20px
+.description-about-company
+	color: #23222e
+	margin-top: 70px
+	line-height: 1.2
+	margin-bottom: 112px
+.description-about-company h2
+	font-family: "HelveticaNeueCyr-Light"
+	font-weight: 100
+	font-size: 35px
+.text-discription
+	display: inline-block
+	width: 83%
+	font-family: "HelveticaNeueCyr-Light"
+	font-size: 17px
+	margin-top: 34px
+.block-left-padding
+	padding-left: 100px
+.text-discription-right
+	width: 100%
+.result-about
+	background: #ededed
+	margin-top: 65px
+	text-align: left
+	padding-bottom: 50px
+	.h2
+		color: #23222e
+		font-size: 44px
+		width: 100%
+		font-weight: 700
+		margin-top: 64px
+		font-family: "HelveticaNeueCyr-Bold"
+	span
+		font-weight: 100
+		display: block
+		margin-top: -6px
+		margin-bottom: 64px
+		font-family: "HelveticaNeueCyr-Light"
+.map_on .spb
+	margin-top: 1px
+.result-about .map_on
+	font-family: "HelveticaNeueCyr-Light"
+	font-size: 15px
+	line-height: 1.3
+.show-more 
+	height: 52px
+	width: 300px
+	background-color: #3870ff
+	text-transform: uppercase
+	font-size: 14px
+	border: none
+	color: #fff
+	font-family: "HelveticaNeueCyr-Bold"
+	display: block
+	margin-left: auto
+	margin-right: auto
+	&:hover
+		background-color: #1F285E
+.result-about .sl12
+	margin-bottom: 50px
+.result-about .slick-slider
+	margin-bottom: 0px
+.write-profi
+	font-size: 23px
+	font-family: "HelveticaNeueCyr-Light"
+	margin-top: 13px
+.clientage
+	margin-top: 40px
+.wrapper-result-appear
+	display: none
+.logo-company
+	height: 120px
+	width: 254px
+	margin-bottom: 20px
+	background-position: center center
+.logo-partners
+	width: 70%
+.img-clientage
+	margin-top: 80px
+.form-about-company 
+	text-align: center
+	padding-top: 77px
+	margin-left: auto
+	margin-right: auto
+	background-color: #ededed
+	position: relative
+.user-form-input
+	text-align: left
+	width: 55%
+	margin-left: auto
+	margin-right: auto
+	margin-top: 117px
+	position: relative
+.form-about-company .h2
+	font-family: "HelveticaNeueCyr-Bold"
+	font-size: 44px
+	color: #23222e
+	margin-bottom: 0px
+.form-about-company p
+	text-align: left
+	margin-left: auto
+	margin-right: auto
+	margin-bottom: 17px
+.input-mail-right
+	margin-right: 28px
+	margin-left: auto
+.form-about-company h2
+	font-family: "HelveticaNeueCyr-Light"
+	font-size: 23px
+	color: #23222e
+	margin-top: -6px
+.border-forma
+	border-bottom: 1px
+	border-right: 0px
+	border-left: 0px
+	border-top: 0px
+	border-style: solid
+	width: 100%
+	height: 52px
+	background-color: #ededed
+.border-forma-line
+	display: inline-block
+	float: left
+	width: 290px
+	height: 33px
+	padding-bottom: 21px
+.button-about-company
+	margin-left: auto
+	margin-right: auto
+	display: block
+	font-family: "HelveticaNeueCyr-Bold"
+	font-size: 14px
+.border-forma-line-tel
+	display: inline-block
+	float: left
+	width: 290px
+	height: 33px
+	padding-bottom: 21px
+.border-forma input:focus
+	color: #23222e
+	border-bottom: 1px
+	border-right: 0px
+	border-left: 0px
+	border-top: 0px 
+.your-photo
+	color: #23222e
+	border-bottom: 1px
+	border-right: 0px
+	border-left: 0px
+	border-top: 0px
+	border-style: solid
+	width: 610px
+	height: 41px
+	padding-bottom: 13px
+.fa-paperclip
+	color: #c2c2c2
+.text-argeement
+	color: #23222e
+	width: 100%
+	margin-left: auto
+	margin-right: auto 
+	margin-top: 54px
+	font-family: "HelveticaNeueCyr-Light"
+	font-size: 15px
+	text-align: left
+	line-height: 1.3
+.form-about-company button
+	width: 290px
+	height: 50px
+	margin-top: 50px
+	background-color: #3870ff
+	color: #ffffff
+	border: none
+	margin-bottom: 162px
+	font-family: "HelveticaNeueCyr-Bold"
+	font-size: 14px
+	line-height: 1.3
+	&:hover
+		background-color: #1F285E
+.neobtn-thick
+	color: #23222e
+	border: solid
+	border-top: 0px
+	border-right: 0px
+	border-bottom: 5px
+	border-left: 0px
+.neobtn-thick:before
+	padding-right: 5px
+	vertical-align: top
+	position: absolute
+	width: 143px
+	height: 44px
+	background-color: #ededed
+	content: ""
+	padding-top: 8px
+	margin-top: -2px
+	padding-left: 50px
+	margin-left: -5px
+.wrapper-clip
+	background-image: url(../img/clip.png)
+	width: 22px
+	height: 22px
+	background-repeat: no-repeat
+	background-position: center center
+	cursor: pointer
+	left: 40%
+	top: 43%
+	position: absolute
+.button-clip:focus
+	color: #000
+.tip-line 
+	margin-top: -12px
+body input:focus
+	color: #000
+//PreviewTraining
+.preview-text h1
+	color: #23222e
+	font-size: 44px
+	width: 100%
+	font-weight: 700
+	font-family: "HelveticaNeueCyr-Bold"
+	margin-top: 86px
+	text-align: center
+	margin-left: auto
+	margin-right: auto
+.preview-text span
+	font-weight: 100
+	color: #23222e
+	font-size: 23px
+	display: block
+	font-family: "HelveticaNeueCyr-Light"
+	margin-top: -18px
+	margin-bottom: 35px
+	text-align: center
+	margin-left: auto
+	margin-right: auto
+.preview-text p
+	color: #23222e
+	font-size: 17px
+	line-height: 1.1
+	padding-left: 36px
+	padding-right: 27px
+.Previw-h1
+	text-align: center
+	margin-left: auto
+	margin-right: auto
+.preview-text
+	margin-bottom: 161px
+.lerning-process-icon
+	background-color: #3870ff
+	text-align: center
+.block-icon
+	margin-top: 40px
+	margin-bottom: 40px
+.learning-process
+	color: #23222e
+	text-align: center
+	margin-top: 88px
+	margin-bottom: 70px
+.learning-process h1
+	font-size: 44px
+	width: 100%
+	font-weight: 700
+	font-family: "HelveticaNeueCyr-Bold"
+	margin-bottom: -20px
+.learning-process span
+	font-weight: 100
+	color: #23222e
+	font-size: 23px
+	display: block
+	font-family: "HelveticaNeueCyr-Light"
+.preview-border
+	border-right: 0
+	border-top: 0
+	botder-left: 0
+	border-bottom: 2px
+	border-color: #2e449b 
+	border-style: solid
+	text-align: center
+	margin-left: auto
+	margin-right: auto
+	width: 69%
+	margin-top: 32px
+	margin-bottom: 29px
+.preview-block-training
+	text-align: center
+	background-color: #ededed
+.table-preview
+	font-size: 13px
+	color: #9db3f9
+	font-family: "HelveticaNeueCyr-Light"
+	text-align: left
+	margin: 25px auto 35px auto
+.table-preview td
+	width: 120px
+.wrapper-skill-training
+	padding-top: 108px
+	margin-bottom: 70px
+.block-line-one
+	margin-bottom: 30px
+.preview-block-training .scils
+	margin-top: 40px
+	margin-bottom: 20px
+.preview-block-training .further
+	margin-top: 0px
+	margin-bottom: 46px
+.text-under-icon
+	width: 159px
+	text-align: center
+	margin-left: auto
+	margin-right: auto
+	line-height: 1.1
+	margin-top: 13px
+	font-family: "HelveticaNeueCyr-Light"
+	font-size: 18px
+.effect-preview
+	text-align: center
+	margin-right: auto
+	margin-left: auto
+.preview-block-training img
+	width: 100%
+//trening-sales
+.what-we-do
+	color: #fff
+	background-image: url(../img/trening-sales.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	background-repeat: no-repeat
+	height: 510px
+	position: relative
+.black-wrapper
+	width: 100%
+	background-color: rgba(0,0,0,0.5)
+	height: 100%
+.blue-wrapper-img
+	height: 100px
+	width: 100px
+	background-color: rgba(66,119,255,0.6)
+	padding-top: 20px
+	border-radius: 50px
+	margin-left: auto
+	margin-right: auto
+	margin-top: 192px
+.title-what-we-do
+	margin-top: 27px
+	font-size: 14px
+	font-family: "HelveticaNeueCyr-Bold"
+.description-what-we-do
+	font-size: 14px
+.more-sales
+	color: #23222e
+	font-size: 17px
+	.h2
+		font-size: 44px
+		font-family: "HelveticaNeueCyr-Bold"
+		line-height: 1
+		margin-bottom: 0px
+		margin-top: 60px
+	span
+		margin-top: -6px
+		font-size: 23px
+	p
+		line-height: 1.1
+	ul
+		margin-top: 35px
+		margin-bottom: 45px
+		padding-left: 20px
+		li
+			color: #4265d6
+			font-size: 20px
+			span
+				color: #23222e
+				margin-top: 0px
+				font-size: 17px
+	p:last-child
+		margin-bottom: 55px	
+.p-this-trening
+	margin-top: 55px
+.girl-for-call
+	position: absolute
+	left: 0px
+	width: 43%
+.wrapper-for-whom
+	background-color: #ededed
+.title-for-whom
+	font-size: 37px
+	font-family: "HelveticaNeueCyr-Thin"
+	color: #b1b1b1
+	margin-top: 52px
+	line-height: 1
+.title-for-whom-trening
+	font-size: 55px
+	font-family: "HelveticaNeueCyr-Heavy"
+	color: #b1b1b1
+	margin-bottom: 55px
+	line-height: 1
+	letter-spacing: 2px
+.for-whom-block
+	width: 162px
+.for-whom-icon
+	margin-top: 42px
+	margin-bottom: 3px
+.for-chief
+	font-size: 18px
+	color: #23222e
+.title-spoiler
+	color: #23222e
+	font-size: 29px
+	font-family: "HelveticaNeueCyr-Bold"
+	margin-top: 80px
+	line-height: 1
+.little-title-spoiler
+	font-family: "HelveticaNeueCyr-Light"
+	color: #23222e
+	font-size: 18px
+	margin-bottom: 30px
+.line-choise
+	height: 1px
+	width: 100%
+	background-color: #c1c1c1
+	margin-bottom: 72px
+.spoiler-choise
+	margin-bottom: 100px
+	tr
+		height: 58px
+		background-color: #1f285e
+		border-bottom: 2px solid #fff
+	.text-choise
+		width: 1014px
+		padding-left: 30px
+	.tr-appear-block
+		height: auto
+		background-color: #fff
+		padding-left: 0
+		color: #23222e
+		font-size: 17px
+	ul
+		padding-left: 20px
+		margin-top: 16px
+		margin-bottom: 16px
+.choise-appear
+	width: 62px
+	height: 62px
+	background-color: #456ff8
+//plus in minus
+.closed 
+  .vertical 
+    transition: all 0.5s ease-in-out
+    transform: rotate(-90deg)
+  
+  .horizontal 
+    transition: all 0.5s ease-in-out
+    transform: rotate(-90deg)
+    opacity: 1
+.circle-plus
+	cursor: pointer
+.opened 
+  opacity: 1
+  .vertical 
+    transition: all 0.5s ease-in-out
+    transform: rotate(90deg)
+  
+  .horizontal 
+    transition: all 0.5s ease-in-out
+    transform: rotate(90deg)
+    opacity: 0
+.circle 
+    position: relative
+    width: 2.55em
+    height: 2.5em
+    background-color: transparent
+    top: 0
+    margin-left: auto
+    margin-right: auto
+    display: block
+.circle .horizontal 
+    position: absolute
+    background-color: #fff
+    width: 25px
+    height: 3px
+    left: 50%
+    margin-left: -13px
+    top: 50%
+    margin-top: -4.5px
+
+.circle .vertical 
+    position: absolute
+    background-color: #fff
+    width: 3px
+    height: 25px
+    left: 50%
+    margin-left: -1.5px
+    top: 50%
+    margin-top: -15px
+.tr-appear-block
+	display: none
+.bottom-arrow1
+	position: relative
+	top: 22px
+.bottom-arrow2
+	position: relative
+	top: 22px
+	visibility: hidden
+.spoiler .spoiler-choise-two
+	display: none
+.first-table
+	cursor: pointer
+.two-table
+	cursor: pointer
+.advantages-trening-block
+	color: #23222e
+	font-size: 17px
+	.h2
+		font-size: 44px
+		font-family: "HelveticaNeueCyr-Bold"
+		line-height: 1
+		margin-bottom: 0px
+		margin-top: 1px
+		font-weight: 700
+		color: #23222e
+	h3
+		font-size: 33px
+		font-family: "HelveticaNeueCyr-Bold"
+		line-height: 1
+		color: #23222e
+	span
+		margin-top: -6px
+		font-size: 23px
+		margin-bottom: 50px
+		font-family: "HelveticaNeueCyr-Light"
+		font-weight: 200
+	p
+		line-height: 1.1
+		margin-top: 36px
+		margin-bottom: 64px
+	ul
+		margin-top: 15px
+		margin-bottom: 46px
+		padding-left: 20px
+		li
+			color: #4265d6
+			font-size: 20px
+			span
+				color: #23222e
+				margin-top: 0px
+				font-size: 17px
+.line-above-form
+	background-image: url(../img/fon-line-sales.jpg)
+	text-align: center
+.text-under-line
+	font-family: "HelveticaNeueCyr-Bold"
+	font-size: 25px	
+	color: #fff
+	letter-spacing: 1px
+	text-align: center
+	margin-left: auto
+	margin-right: auto
+	margin-bottom: -11px
+	margin-top: 21px
+.price-under-line
+	font-family: "HelveticaNeueCyr-Light"
+	font-size: 28px
+	color: #fff
+	letter-spacing: 1px
+	text-align: center
+	margin-left: auto
+	margin-right: auto
+.block-icon-price
+	margin-top: 72px
+	margin-bottom: 88px
+.form-h2
+	font-family: "HelveticaNeueCyr-Light"
+	font-size: 23px
+	color: #23222e
+	margin-top: -6px
+
+@import "media" // Always at the end

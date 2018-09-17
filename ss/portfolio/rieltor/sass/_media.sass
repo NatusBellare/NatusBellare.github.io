@@ -1,0 +1,163 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	header.main__header
+		img.header__person
+			display: none
+		.phone-contact__header
+			float: left
+			margin-right: 0
+			display: block
+			width: 100%
+		h1
+			margin: 0
+	section.about-us
+		.about-us-item
+			width: 100%
+			margin-bottom: 20px
+			display: inline-block
+			.about-us-item-left
+				img
+					width: 50px
+			.about-us-item-right
+				width: calc(100% - 70px)
+				span.about-us-item-title
+					font-size: 16px
+				p
+					font-size: 15px
+		p.description
+			width: 100%
+			font-size: 15px
+			margin-top: 20px
+	section.system
+		margin-top: 20px
+		.system-img
+			display: none
+		.system-text
+			padding-left: 20px
+			padding-right: 20px
+			margin-top: 0
+			h2
+				text-align: center
+				font-size: 24px
+				margin-top: 20px
+				&:after
+					margin: auto
+					margin-top: 20px
+	section.call-to-action
+		p.description
+			font-size: 16px
+		form
+			width: 100%
+			padding-left: 20px
+			padding-right: 20px
+			p.form-description
+				font-size: 18px
+			.input
+				width: 100%
+				input
+					width: 100%
+					margin-bottom: 20px
+				button
+					width: 100%
+					font-size: 14px
+	section.benefit
+		padding-left: 5px
+		padding-right: 5px
+		h2
+			font-size: 24px
+			margin-bottom: 0
+			margin-top: 0
+		span.benefit-title
+			font-size: 18px
+		ul
+			margin-bottom: 50px
+			display: inline-block
+			width: 100%
+			li
+				display: block
+				float: none
+				text-align: center
+				img
+					display: block
+					float: none
+					margin: auto
+					margin-bottom: 20px
+	section.reviews
+		.full
+			display: none
+		.small
+			display: block
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	header.main__header
+		img.header__person
+			display: none
+	h2.title
+		font-size: 24px
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	header.main__header
+		h1
+			font-size: 38px
+		p.main-description__header
+			font-size: 18px
+		p.main-description__header
+			font-size: 16px
+		p.main-user
+			font-size: 16px
+		form
+			input.phone-input__header
+				width: 100%
+			button
+				width: 100%
+	section.reviews
+		.small
+			img
+				width: 100%
+			span
+				text-align: left
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
