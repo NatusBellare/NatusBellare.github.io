@@ -37,7 +37,7 @@ $(document).ready(function () {
     });
  
 });
-$(window).bind('mousewheel', function(event) {
+$(window).bind('wheel', function(event) {
 	var wid = $(window).width()
 if (event.originalEvent.wheelDelta >= 0 && wid > 1025 && $('.appear-block').css('display') == "none") {
     window.scrollBy(0, -window.innerHeight)
