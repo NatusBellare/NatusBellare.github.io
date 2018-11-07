@@ -1,0 +1,1453 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	input, textarea
+			border: #666 1px solid
+			outline: none
+			&:focus:required:invalid
+				border-color: red
+			&:required:valid
+				border-color: green
+a
+	color: inherit
+a:hover
+	color: inherit
+body .container
+	padding-left: 0
+	padding-right: 0
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+.clearfix::after
+	content: ""
+	display: table
+	clear: both
+.text-center
+	text-align: center
+.header
+	height: auto
+	background-color: #fff
+	width: 100%
+.header .container-top-line
+	position: absolute
+	z-index: 120
+	left: 50%
+	margin-left: -570px
+	width: 1140px
+.top-line
+	padding-top: 23px
+	font-family: "NotoSans"
+	font-size: 16px
+	color: #fffff4
+	width: 100%
+.top-call
+	float: left
+	padding-top: 5px
+.connection-for-mobile
+	display: none
+.block-get-catalog
+	float: right
+.number-one
+	margin-top: 5px
+	margin-bottom: 4px
+	white-space: nowrap
+.number-two
+	white-space: nowrap
+.header .fa-phone
+	color: #ff0c56
+	font-size: 14px
+	margin-right: 10px
+.header .fa-mobile-alt
+	color: #ff0c56
+	font-size: 14px
+	margin-left: 16px
+	margin-right: 11px
+.header .fa-file-alt
+	color: #ff0c56
+	font-size: 14px
+	margin-right: 10px
+.block-get-catalog
+	height: 30px
+	width: 245px
+	background-color: #fefefe
+	border-radius: 15px
+	color: #424242
+	font-size: 14px
+	padding: 3px 0 0 15px
+	font-family: "NotoSans"
+.block-get-catalog-mobile
+	height: 30px
+	width: 245px
+	background-color: #fefefe
+	border-radius: 15px
+	color: #424242
+	font-size: 14px
+	padding: 3px 0 0 15px
+	font-family: "NotoSans"
+	display: none
+.menu
+	background-color: #fff
+	width: 100%
+	border-radius: 7px
+	margin-top: 25px
+	color: #424242
+	height: 80px
+.nav
+	float: right
+.ul-nav 
+	list-style: none
+	padding-left: 0px
+	float: right
+	margin-bottom: 0px
+	li
+		display: block
+		float: left
+		padding: 26px 15px
+		border-left: 1px solid #f0f0f0
+		height: 80px
+		font-family: "NotoSansBold"
+		font-size: 14px
+		white-space: nowrap
+#touch-menu
+	display: none
+	color: #000
+	font-family: "goemetria"
+	text-decoration: none
+	text-align: center
+	height: 40px
+	line-height: 40px
+	z-index: 5
+	position: relative
+	float: right
+	margin-top: 17px
+	margin-right: 17px
+
+.container-button
+  	display: inline-block
+  	cursor: pointer
+
+.bar1, .bar2, .bar3
+  	width: 35px
+  	height: 5px
+  	background-color: #f61050
+  	margin: 6px 0
+  	transition: 0.4s
+
+.change
+  	.bar1
+   		-webkit-transform: rotate(-45deg) translate(-9px, 6px)
+    	transform: rotate(-45deg) translate(-9px, 6px)
+  	.bar2
+    	opacity: 0
+  	.bar3
+    	-webkit-transform: rotate(45deg) translate(-8px, -8px)
+    	transform: rotate(45deg) translate(-8px, -8px)
+//mouse-scroll
+.ul-nav .mouse-scroll
+	background-color: #db1b3f
+	padding-top: 30px
+@-webkit-keyframes ani-mouse
+  0%
+    opacity: 1
+    top: 29%
+
+  15%
+    opacity: 1
+    top: 50%
+
+  50%
+    opacity: 0
+    top: 50%
+
+  100%
+    opacity: 0
+    top: 29%
+
+
+@-moz-keyframes ani-mouse
+  0%
+    opacity: 1
+    top: 29%
+
+  15%
+    opacity: 1
+    top: 50%
+
+  50%
+    opacity: 0
+    top: 50%
+
+  100%
+    opacity: 0
+    top: 29%
+
+
+@keyframes ani-mouse
+  0%
+    opacity: 1
+    top: 29%
+
+  15%
+    opacity: 1
+    top: 50%
+
+  50%
+    opacity: 0
+    top: 50%
+
+  100%
+    opacity: 0
+    top: 29%
+
+
+.scroll-btn
+  display: block
+  left: 0
+  right: 0
+  text-align: center
+  > *
+    display: inline-block
+    line-height: 18px
+    font-size: 13px
+    font-weight: normal
+    color: #7f8c8d
+    color: #ffffff
+    font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif
+    letter-spacing: 2px
+    &:hover, &:focus, &.active
+      color: #ffffff
+    &:hover, &:focus, &:active, &.active
+      opacity: 0.8
+      filter: alpha(opacity = 80)
+  .mouse
+    position: relative
+    display: block
+    width: 12px
+    height: 18px
+    margin: 0 auto 20px
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+    border: 2px solid white
+    border-radius: 23px
+    > *
+      position: absolute
+      display: block
+      top: 29%
+      left: 50%
+      width: 4px
+      height: 4px
+      margin: -4px 0 0 -2px
+      background: white
+      border-radius: 50%
+      -webkit-animation: ani-mouse 2.5s linear infinite
+      -moz-animation: ani-mouse 2.5s linear infinite
+      animation: ani-mouse 2.5s linear infinite
+.what-we-do
+	font-family: "MyriadPro-Regula"
+	font-size: 40px
+.it-slider
+	font-size: 85px
+	font-family: "CuprumBold"
+	line-height: 1.3
+.header .sl12
+	width: 110%
+	left: -5%
+	position: relative
+.header .sl12 .sl__slide
+	position: static
+	border-right: 5px solid #fff
+	transform: skew(-5deg)
+	overflow: hidden
+	height: 600px
+	position: relative
+.header .sl12 .slick-dots
+	width: auto
+	bottom: auto
+	top: 40%
+	left: 12%
+.header .sl12 .slick-prev
+	display: none
+.header .sl12 .slick-next
+	display: none
+.header .sl12 .slick-slider
+	margin-bottom: 0px
+.header .sl12 .slick-dots li
+	display: block
+.header .slick-dots li button
+	color: #ff0c56
+	padding: 0px
+	font-size: 15px
+	line-height: 1.3
+	font-family: "roboto-example"
+	font-weight: bold
+	margin-top: 14px
+	background-color: transparent
+	width: 40px
+.header .slick-dots li button:after
+	content: ""
+	width: 6px
+	height: 3px
+	background-color: #ff0c56
+	position: absolute
+	top: 9px
+	left: 32px
+	opacity: 1
+.header .slick-dots li.slick-active button:after
+	width: 21px
+.header .wrapper-we-do1
+	background-image: url("../img/slider-header1.jpg")
+	height: 620px
+	background-position: center 0
+	background-repeat: no-repeat
+	transform: skew(5deg)
+	position: absolute
+	background-color: #000
+	left: -30px
+	right: -30px
+	bottom: 0px
+	background-size: cover
+.header .wrapper-we-do2
+	background-image: url("../img/slider-header2.jpg")
+	height: 620px
+	background-position: center 0
+	background-repeat: no-repeat
+	transform: skew(4deg)
+	position: absolute
+	background-color: #000
+	left: -30px
+	bottom: 0px
+	right: -30px
+	background-size: cover
+.sl12 .slick-slide .little-arow
+	display: inline-block
+	margin-left: 12px
+	position: relative
+	top: -1px
+.block-text-slider1
+	margin-top: 238px
+	margin-left: 100px
+	color: #fff
+	width: 530px
+	float: right
+	margin-right: 110px
+.block-text-slider2
+	margin-top: 238px
+	color: #fff
+	width: 530px
+	float: right
+	margin-right: 14%
+	text-align: right
+.logo
+	padding-top: 12px
+	padding-bottom: 14px
+	padding-left: 25px
+	float: left
+	font-size: 14px
+	font-family: "NotoSans"
+.img-logo
+	float: left
+	margin-right: 18px
+//adriatic-point
+.adriatic-point
+	width: 100%
+	color: #424242
+	font-family: "NotoSans"
+	font-size: 16px
+	line-height: 1.9
+.wrapper-text-about-us
+	width: 660px
+	transform: skew(-5deg)
+	float: right
+	position: relative
+	left: 20px
+	font-size: 16px
+	margin-bottom: 65px
+	background-color: #fff
+.text-about-us
+	transform: skew(5deg)
+	padding-left: 25px
+	padding-right: 25px
+.fon-video
+	width: 100%
+.block-video-about
+	width: 48%
+	float: right
+	margin-bottom: 65px
+//our-service
+.our-service
+	background-color: #f2f3f6
+	border-top: 1px solid #e8e9ed
+.wrapper-block-service
+	margin-bottom: 75px
+.text-service
+	text-align: center
+	letter-spacing: 2.8px
+	font-family: "roboto-example"
+	font-weight: bold
+	font-size: 12px
+.icon-service
+	height: 100px
+	width: 104px
+	background-image: url(../img/sprite-servise.png)
+	background-repeat: no-repeat
+	margin-left: auto
+	margin-right: auto
+.icon-service1
+	background-position: 0 0
+.icon-service2
+	background-position: -279px 0
+.icon-service3
+	background-position: -591px 0
+.icon-service4
+	background-position: -860px 0
+.icon-service5
+	background-position: 0 -197px
+.icon-service6
+	background-position: -279px -197px
+.icon-service7
+	background-position: -591px -197px
+.icon-service8
+	background-position: -860px -197px
+//object-catalogue
+.object-catalogue
+	background-image: url(../img/fon-slider.jpg)
+.wrapper-catalogue
+	height: 270px
+	width: 100%
+	margin-bottom: 50px
+.up-wrapper-catalogue
+	width: 100%
+	margin-bottom: 20px
+.catalogue-text
+	float: left
+	width: 260px
+	padding-left: 45px
+.up-catalogue-text
+	color: #424242
+	font-size: 18px
+	font-family: "NotoSans"
+.title-catalogue
+	color: #9fa3a7
+	font-size: 14px
+	font-family: "NotoSans"
+	letter-spacing: 2.5px
+	margin-top: 65px
+	margin-bottom: 20px
+.description-catalogue
+	font-family: "NotoSans"
+	font-size: 18px
+	color: #424242
+	line-height: 1.4
+	margin-bottom: 24px
+.more-info-catalogue
+	font-family: "NotoSans"
+	font-size: 12px
+	color: #1173ba
+	letter-spacing: 3px
+.img-catalogue
+	width: 275px
+	height: 275px
+	background-image: url(../img/ready-object-slider.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: -200px center
+	float: left
+.up-img-catalogue
+	width: 275px
+	height: 275px
+	background-image: url(../img/ready-object-slider.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center center
+	float: left
+	margin-right: 38px
+.slick-active .img-catalogue
+	box-shadow: 0 0 10px rgba(0,0,0,0.5)
+.object-catalogue .sl12 .slick-prev
+	width: 50px
+	height: 50px
+	background-image: url(../img/arrows.png)
+	background-repeat: no-repeat
+	position: absolute
+	top: 44%
+	left: -72px
+.object-catalogue .sl12 .slick-prev:hover, .slick-prev:focus
+	width: 50px
+	height: 49px
+	color: rgba(0,0,0,0)
+	background-image: url(../img/arrows.png)
+.object-catalogue .sl12 .slick-next:hover, .slick-next:focus
+	width: 50px
+	height: 49px
+	color: rgba(0,0,0,0)
+	background-image: url(../img/arrows.png)
+.object-catalogue .sl12 .slick-next
+	width: 50px
+	height: 50px
+	background-image: url(../img/arrows.png)
+	background-repeat: no-repeat
+	background-position: -57px 0
+	position: absolute
+	right: -89px
+	top: 44%
+.object-catalogue .sl12
+	padding-left: 5px
+	padding-right: 5px
+.object-catalogue .sl12 .slick-next:before
+	content: ""
+.object-catalogue .sl12 .slick-prev:before
+	content: ""
+.pdf-catalog
+	width: 100%
+	border: 1px solid #fff
+	background-color: #f2f3f6
+	padding-left: 28px
+	margin-bottom: 48px
+	box-shadow: 0 0 50px rgba(0,0,0,0.1)
+	border-radius: 3px
+.text-pdf-catalog
+	float: left
+	line-height: 82px
+	font-size: 18px
+	font-family: "roboto-example"
+	margin-right: 30px
+.text-pdf-catalog-get
+	float: left
+	line-height: 82px
+	font-size: 26px
+	font-family: "roboto-example"
+	margin-right: 30px
+.icon-pdf
+	margin-top: 10px
+	margin-right: 25px
+	float: left
+.input-pdf
+	border-top: 0px
+	border-left: 0px
+	border-right: 0px
+	background-color: rgba(0, 0, 0, 0)
+	width: 357px
+	border-bottom: 1px solid #d1d3d6
+	color: #424242
+	padding-left: 15px
+	padding-bottom: 0px
+	float: left
+	margin-top: 30px
+	font-family: "roboto-example"
+	font-size: 18px
+	margin-bottom: 15px
+.pdf-catalog .input-pdf::placeholder
+	color: #424242
+	font-family: "roboto-example"
+	font-size: 18px
+.fa-arrow-right
+	color: #fc3a76
+	position: relative
+	top: 37px
+	left: -20px
+//object-on-sell
+.object-on-sell
+	background-color: #f2f3f6
+.object-on-sell .white-pdf
+	background-color: #fff
+.wrapper-catalogue
+	height: 270px
+	width: 100%
+	margin-bottom: 50px
+.catalogue-text
+	float: left
+	width: 260px
+	padding-left: 45px
+.title-catalogue
+	color: #9fa3a7
+	font-size: 14px
+	font-family: "NotoSans"
+	letter-spacing: 2.5px
+	margin-top: 65px
+	margin-bottom: 20px
+.description-catalogue
+	font-family: "NotoSans"
+	font-size: 18px
+	color: #424242
+	line-height: 1.4
+	margin-bottom: 24px
+.more-info-catalogue
+	font-family: "NotoSans"
+	font-size: 12px
+	color: #1173ba
+	letter-spacing: 3px
+.img-catalogue
+	width: 275px
+	height: 275px
+	background-image: url(../img/ready-object-slider.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: -200px center
+	float: left
+.slick-active .img-catalogue
+	box-shadow: 0 0 10px rgba(0,0,0,0.5)
+.object-on-sell .sl12 .slick-prev
+	width: 50px
+	height: 50px
+	background-image: url(../img/arrows.png)
+	background-repeat: no-repeat
+	position: absolute
+	top: 44%
+	left: -72px
+.object-on-sell .sl12 .slick-prev:hover, .slick-prev:focus
+	width: 50px
+	height: 49px
+	color: rgba(0,0,0,0)
+	background-image: url(../img/arrows.png)
+.object-on-sell .sl12 .slick-next:hover, .slick-next:focus
+	width: 50px
+	height: 49px
+	color: rgba(0,0,0,0)
+	background-image: url(../img/arrows.png)
+.object-on-sell .sl12 .slick-next
+	width: 50px
+	height: 50px
+	background-image: url(../img/arrows.png)
+	background-repeat: no-repeat
+	background-position: -57px 0
+	position: absolute
+	right: -89px
+	top: 44%
+.object-on-sell .sl12
+	padding-left: 5px
+	padding-right: 5px
+.object-on-sell .sl12 .slick-next:before
+	content: ""
+.object-on-sell .sl12 .slick-prev:before
+	content: ""
+//our-adventage
+.wrapper-our-adventage
+	box-shadow: 0 5px 20px rgba(0,0,0,0.3)
+	height: 352px
+	width: 100%
+	margin-bottom: 80px
+	border-radius: 5px
+	img
+		margin-top: 45px
+.title-our-adventage
+	font-size: 12px
+	font-family: "roboto-example"
+	font-weight: bold
+	color: #121212
+	letter-spacing: 2px
+	margin-top: 42px
+	margin-bottom: 21px
+.description-adventage
+	color: #9fa3a7
+	font-family: "NotoSans"
+	margin-left: auto
+	margin-right: auto
+	width: 264px
+//cripto-block
+.cripto-block
+	height: 435px
+	width: 100%
+	background-image: url(../img/fon-bitcoin.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center center
+	background-color: #6c6c78
+	box-shadow: inset 0 0 50px rgba(0,0,0,0.8) 
+.text-cripto
+	font-family: "NotoSans"
+	font-size: 18px
+	color: #fff
+	margin-top: 126px
+	margin-bottom: 64px
+.cripto-button
+	height: 105px
+	width: 275px
+	background-image: url(../img/button-bitcoin.png)
+	background-size: cover
+	border: none
+	border-radius: 15px
+	cursor: pointer
+//our-team
+.our-team
+	background-color: #f2f3f6
+.wrapper-our-team
+	height: 276px
+	width: 100%
+	margin-bottom: 50px
+.img-our-team1
+	width: 272px
+	height: 272px
+	background-image: url(../img/team1.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center center
+	float: left
+.img-our-team2
+	width: 272px
+	height: 272px
+	background-image: url(../img/team2.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center center
+	float: left
+.our-team-text
+	float: left
+	width: 260px
+	padding-left: 45px
+.title-our-team
+	color: #9fa3a7
+	font-size: 14px
+	font-family: "NotoSans"
+	letter-spacing: 2.5px
+	margin-bottom: 5px
+.who-it
+	color: #1173ba
+	font-size: 14px
+	font-family: "NotoSans"
+	letter-spacing: 2.5px
+	margin-bottom: 22px
+.more-who-it
+	font-family: "NotoSans"
+	font-size: 18px
+	color: #424242
+	line-height: 1.3
+.slick-active .img-our-team1, .img-our-team2
+	box-shadow: 0 0 10px rgba(0,0,0,0.5)
+.our-team .sl12 .slick-prev
+	width: 50px
+	height: 50px
+	background-image: url(../img/arrows.png)
+	background-repeat: no-repeat
+	position: absolute
+	top: 38%
+	left: -72px
+.our-team .sl12 .slick-prev:hover, .slick-prev:focus
+	width: 50px
+	height: 49px
+	color: rgba(0,0,0,0)
+	background-image: url(../img/arrows.png)
+.our-team .sl12 .slick-next:hover, .slick-next:focus
+	width: 50px
+	height: 49px
+	color: rgba(0,0,0,0)
+	background-image: url(../img/arrows.png)
+.our-team .sl12 .slick-next
+	width: 50px
+	height: 50px
+	background-image: url(../img/arrows.png)
+	background-repeat: no-repeat
+	background-position: -57px 0
+	position: absolute
+	right: -89px
+	top: 38%
+.our-team .sl12
+	padding-left: 5px
+	padding-right: 5px
+.our-team .sl12 .slick-next:before
+	content: ""
+.our-team .sl12 .slick-prev:before
+	content: ""
+//footer
+.footer li 
+	list-style-type: none
+.footer 
+	background-color: #393c41
+	width: 100%
+.footer-write
+	color: #73787f
+	line-height: 1.8
+	font-size: 18px
+.tringle
+	margin-left: auto
+	margin-right: auto
+	position: relative
+	top: -60px
+	margin-bottom: -30px
+.footer-write-one
+	margin-top: 35px
+	line-height: 1.8
+	color: #73787f
+	font-size: 16px
+	font-family: "NotoSans"
+	padding-left: 0px
+.footer .fa-phone
+	font-size: 14px
+	margin-right: 10px
+.footer .fa-mobile-alt
+	font-size: 14px
+	margin-left: 16px
+	margin-right: 11px
+.copyrater
+	line-height: 1.8
+	color: #73787f
+	font-size: 16px
+	font-family: "NotoSans"
+.footer-write-right
+	color: #73787f
+	line-height: 1.8
+	text-align: right
+	font-size: 14px
+	font-family: "NotoSansBold"
+	font-weight: bold
+	margin-top: 35px
+.footer-icon
+	width: 15px	
+.description-map
+	text-align: center
+	margin-top: 48px
+	margin-bottom: 59px
+.top-title-main
+	font-size: 12px
+	color: #9fa3a7
+	font-family: "roboto-example"
+	display: block
+	text-align: center
+	width: 270px
+	letter-spacing: 2.5px
+	margin-left: auto
+	margin-right: auto
+	border-bottom: 1px solid #9fa3a7
+	padding-bottom: 12px
+	margin-bottom: 12px
+	font-weight: bold
+.bottom-title-main
+	font-size: 26px
+	color: #2c2c2c
+	font-family: "roboto-example"
+	font-weight: normal
+.long-line-map
+	background-color: #f2f3f6
+.map 
+	width: 100%
+.repit-logo
+	width: 46px
+	height: 46px
+	border: 5px solid #e5e5e5
+	border-radius: 25px
+	background-image: url(../img/mini-logo.png)
+	background-position: center center
+	background-repeat: no-repeat
+	margin-left: auto
+	margin-right: auto
+	position: relative
+	top: 22px
+	background-color: #fff
+.phone-recourse
+	background-color: #f2f3f6
+	z-index: 1
+	width: 978px
+	float: right
+	line-height: 1.7
+	font-size: 18px
+	padding-top: 80px
+	padding-right: 35px
+	font-family: "NotoSans"
+	padding-left: 200px
+	background-image: url("../img/director-phone.png")
+	background-repeat: no-repeat
+	background-position: -60px center
+.footer-number-with
+	float: left
+.footer-number
+	float: left
+.director-photo
+	width: 273px
+	z-index: 3
+	position: absolute
+	top: 88px
+.recourse-name
+	z-index: 4
+	margin-top: 25px
+	padding-bottom: 88px
+.fz-name
+	font-size: 24px	
+	font-family: "roboto-example"
+	font-weight: bold
+.fz-directory
+	font-size: 18px
+	color: #1173ba
+	font-style: italic
+	font-family: "NotoSans"
+.recourse
+	margin-right: 33%
+	margin-bottom: 11px
+	width: 100%
+.recourse-description
+	text-align: center
+	padding-bottom: 58px	
+	padding-top: 50px
+.line-full-width
+	height: 1.5px
+	width: 100%
+	background-color: #f2f3f6
+//tekstovaya
+.textual
+	position: static
+	margin-top: 95px
+	margin-bottom: 78px
+	font-family: "NotoSans"
+	font-size: 16px
+	line-height: 1.9
+.textual-text
+	position: static
+.right-img 
+	position: absolute
+	width: 50%
+	right: 0px
+.textual .container
+	position: static
+.textual .col-xl-12
+	position: static
+.textual .row
+	position: static
+.proba
+	float: right
+	width: 580px
+	height: 500px
+.header-phone-img
+	background-image: url(../img/header-building.jpg)
+	width: 100%
+	height: 600px
+	text-align: center
+.header-textual
+	background-image: url(../img/header-building.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center center
+.textual-building
+	margin-bottom: 38px
+	text-align: left
+	margin-top: 165px
+	padding-right: 15px
+	padding-left: 15px
+	color: #fff
+	font-family: "NotoSans"
+.building-in
+	font-size: 85px
+	font-family: "CuprumBold"
+	line-height: 1.9
+.description-building
+	font-size: 16px
+	font-family: "NotoSans"
+	width: 985px
+	line-height: 1.9
+.form-above-footer
+	background-color: #f2f3f6
+.block-above-footer
+	background-image: url(../img/above-footer.jpg)
+.form-textual
+	background-color: #f2f3f6
+	width: 1590px
+	height: 270px
+.under-form-text
+	text-align: center
+	font-family: "roboto-example"
+	font-size: 26px
+	color: #ffffff
+	font-weight: normal
+.under-form-number
+	text-align: center
+	font-family: "roboto-example"
+	font-weight: bold
+	color: #ffffff
+	font-size: 30px
+.under-form
+	margin-bottom: 87px
+	margin-top: 67px
+	margin-left: auto
+	margin-right: auto
+.form-textual-page
+	background-color: #fff
+	margin-left: auto
+	margin-right: auto
+	height: 80px
+	box-shadow: 0 0 50px rgba(0,0,0,0.1)
+	border-radius: 5px
+.form-textual-page button
+	cursor: pointer
+	height: 48px
+	width: 210px
+	color: #ff0c56
+	font-family: "NotoSansBold"
+	font-weight: bold
+	font-size: 12px
+	border-radius: 25px
+	border: 1px solid #ff0c56
+	background-color: #fff
+	box-shadow: 0 0 3px #ff0c56
+	margin-left: 100px
+	margin-right: 80px
+.form-phone
+	margin-left: 80px
+	border-top: 0px
+	border-right: 0px
+	border-bottom: 1px solid
+	border-left: 0px
+	border-color: #d9dadc
+	font-family: "NotoSans"
+	font-size: 18px
+	color: #242424
+	margin-top: 26px
+.icon-form-phone
+	margin-left: -15px
+	color: #fb0e54
+.form-email
+	margin-left: 50px
+	border-top: 0px
+	border-right: 0px
+	border-bottom: 1px solid
+	border-left: 0px
+	border-color: #d9dadc
+	font-family: "NotoSans"
+	font-size: 18px
+	color: #242424
+.icon-pdf-textual
+	margin-left: 112px
+.write-form-textual
+	margin-top: 47px
+	margin-left: auto
+	margin-right: auto
+	text-align: center
+	margin-bottom: 40px
+	font-weight: normal
+	font-size: 26px
+	color: #2c2c2c
+.header-textual
+	background-color: #fff
+	width: 100%
+.p-form
+	background-color: #fff
+	padding-bottom: 5px
+	border-radius: 5px
+//pop-up form
+.contact-wrapper
+	width: 100%
+	height: 100%
+	position: fixed
+	display: none
+	background-color: rgba(0,0,0,0.7)
+	z-index: 200
+	top: 0px
+	left: 0px
+.wrapper-get-pdf
+	width: 100%
+	height: 100%
+	position: fixed
+	display: none
+	background-color: rgba(0,0,0,0.7)
+	z-index: 200
+	top: 0px
+	left: 0px
+.wrapper-pay-bitcoin
+	width: 100%
+	height: 100%
+	position: fixed
+	display: none
+	background-color: rgba(0,0,0,0.7)
+	z-index: 200
+	top: 0px
+	left: 0px
+.pop-up-bitcoin
+	margin-top: 60px
+	width: 690px
+	padding: 20px 44px 50px
+	z-index: 20000
+	white-space: normal
+	vertical-align: middle
+	position: fixed
+	left: 50%
+	margin-left: -345px
+	color: #ffffff
+	font-family: "geometria"
+	font-size: 23px
+	background-color: #fff
+	position: relative
+	border-radius: 5px
+.pop-up-pdf
+	margin-top: 60px
+	width: 690px
+	padding: 20px 44px 50px
+	z-index: 20000
+	white-space: normal
+	vertical-align: middle
+	position: fixed
+	left: 50%
+	margin-left: -345px
+	color: #ffffff
+	font-family: "geometria"
+	font-size: 23px
+	background-color: #fff
+	position: relative
+	border-radius: 5px
+.i-want-pdf
+	cursor: pointer
+.catalogue-text .more-info-catalogue .i-want-pdf:hover
+	text-decoration: underline
+.connect
+	cursor: pointer
+.sent-message-right
+	margin-top: 60px
+	width: 690px
+	padding: 20px 44px 50px
+	z-index: 20000
+	white-space: normal
+	vertical-align: middle
+	position: fixed
+	left: 50%
+	margin-left: -345px
+	color: #ffffff
+	font-family: "geometria"
+	font-size: 23px
+	background-color: #fff
+	position: relative
+	border-radius: 5px
+	p
+		margin: 0px
+	.fa-user-circle
+		color: #ff0c56
+		position: relative
+		left: 60px
+		font-size: 18px
+	.fa-phone
+		color: #ff0c56
+		position: relative
+		left: 60px
+		font-size: 16px
+.sent-message-right .send_message
+	font-family: "NotoSans"
+	font-size: 36px
+	color: #424242
+	text-align-last: auto
+	display: inline-block
+	line-height: 1.3
+	margin-top: 15px
+	padding-left: 26px
+.title-home
+	font-family: "NotoSans"
+	font-size: 30px
+	color: #424242
+	text-align-last: auto
+	display: inline-block
+	line-height: 1.3
+	margin-top: 15px
+	padding-bottom: 20px
+.b-exit
+	width: 21px
+	height: 21px
+	background-color: transparent
+	background-image: url(../img/button-exit.png)
+	background-repeat: no-repeat
+	background-size: cover
+	border: none
+	cursor: pointer
+	display: inline-block
+	position: absolute
+	top: 25px
+	right: 30px
+.contact-wrapper .sent-message-right input
+	width: 90%
+	margin-top: 40px
+	border: 2px solid #D0D0D0
+	border-radius: 5px
+	height: 70px
+	padding-top: 20px
+	padding-left: 90px
+	padding-bottom: 20px
+	font-family: "NotoSans"
+	font-size: 18px
+	color: #424242
+.form-button-appear
+	margin-top: 50px
+	font-family: "NotoSansBold"
+	font-size: 12px
+	font-weight: bold
+	letter-spacing: 2px
+	cursor: pointer
+	border-radius: 25px
+	border: 1px solid #ff0c56
+	background-color: #fff
+	box-shadow: 0 0 3px #ff0c56
+	color: #ff0c56
+	height: 48px
+	width: 170px
+	display: block
+	margin-left: auto
+	margin-right: auto
+.more-about-pdf
+	margin-top: 20px
+	font-family: "NotoSansBold"
+	font-size: 12px
+	font-weight: bold
+	letter-spacing: 2px
+	cursor: pointer
+	border-radius: 25px
+	border: 1px solid #ff0c56
+	background-color: #fff
+	box-shadow: 0 0 3px #ff0c56
+	color: #ff0c56
+	padding: 16px 38px
+	display: block
+	margin-left: auto
+	margin-right: auto
+.wrapper-pay-bitcoin .pop-up-bitcoin .up-img-bitcoin
+	background-image: url("../img/pay-bitcoin.jpg")
+	background-position: center center
+	background-size: cover
+//Object
+.header-object
+	background-image: url(../img/header-object.jpg)
+	width: 100%
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center center
+.midle-text-object
+	color: #424242
+	font-size: 16px
+	font-family: "NotoSans"
+	margin-top: 47px
+	margin-bottom: 47px
+	line-height: 1.9
+.midle-text-object p
+	padding-left: 15px
+	padding-right: 15px
+.img-object
+	width: 100%
+.text-header-object h1
+	margin-top: 60px
+	margin-bottom: 50px
+.text-header-object p
+	padding-left: 0
+	padding-right: 0
+	line-height: 1.1
+.textual-building-object
+	margin-bottom: 86px
+.midle-text-object-one
+	margin-bottom: 30px
+.img-video-object
+	margin-top: -20px
+//sliderObject
+.slider-object .sl__slide
+	position: relative
+.slider-object .sl2
+	margin-top: -205px
+	text-align: center
+	margin-right: auto
+	margin-left: auto
+	padding-left: 76px
+	padding-right: 84px
+.slider-object .sl2__slide
+	margin-left: 10px
+	margin-right: 10px
+	cursor: pointer
+.slider-object .sl12 .slick-prev
+	left: 25px
+	width: 49px
+	height: 49px
+	background-image: url(../img/ArrowObjectOn1.png)
+	opacity: 0.4
+.slider-object .sl12 .slick-next
+	right: 25px
+	width: 49px
+	height: 49px
+	background-repeat: no-repeat
+	background-image: url(../img/ArrowObjectOn2.png)
+	opacity: 0.4
+.slider-object .sl12 .slick-prev:hover, .slick-prev:focus
+	width: 49px
+	height: 49px
+	color: rgba(0,0,0,0)
+	background-image: url(../img/ArrowObjectOn1.png)
+	opacity: 1
+.slider-object .sl12 .slick-next:hover, .slick-next:focus
+	width: 49px
+	height: 49px
+	color: rgba(0,0,0,0)
+	background-image: url(../img/ArrowObjectOn2.png)
+	opacity: 1
+.slider-object .slider-object .sl12 .slick-prev:before, .slick-next:before, .slick-prev:hover:before, .slick-prev:focus:before, .slick-next:hover:before, .slick-next:focus:before
+	color: transparent
+//header-blog
+.header-blog
+	background-image: url(../img/bg-blog.jpg)
+	width: 100%
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center center
+.textual-blog
+	margin-bottom: 0
+	text-align: left
+	margin-top: 165px
+	padding-right: 15px
+	padding-left: 15px
+	color: #fff
+	font-family: "NotoSans"
+.blog-in
+	font-size: 85px
+	font-family: "CuprumBold"
+	line-height: 1
+	margin-top: 5px
+.wrapper-blog
+	width: 100%
+	margin-top: 47px
+	background-repeat: no-repeat
+	background-size: cover
+	position: relative
+	overflow: hidden
+.fon-view
+	position: absolute
+	bottom: 0
+	right: 0
+	background-image: url(../img/fon-view.png)
+	background-repeat: no-repeat
+	width: 100%
+	background-size: cover
+	opacity: 0.9	
+	height: 121px
+	transition-duration: 0.7s
+	opacity: 0
+.blog1
+	background-image: url(../img/bg-record1.jpg)
+.blog2
+	background-image: url(../img/bg-record1.jpg)
+.blog-title
+	font-family: "CuprumBold"
+	font-size: 36px
+	color: #fff
+	margin-bottom: 45px
+	margin-left: 36px
+	margin-right: 36px
+	padding-top: 60px
+	position: relative
+	z-index: 2
+.description-record
+	font-family: "NotoSans"
+	font-size: 16px
+	color: #fff
+	margin-bottom: 45px
+	width: 75%
+	margin-left: 36px
+	margin-right: 36px
+	position: relative
+	z-index: 2
+	transition-duration: 0.7s
+	opacity: 0
+.blog1:hover .description-record
+	opacity: 1
+.blog1:hover .more-record
+	opacity: 1
+.blog1:hover .about-view
+	opacity: 1
+.blog1:hover .fon-view
+	opacity: 1
+.blog1:hover .appear-blog-fon
+	opacity: 1
+.blog2:hover .description-record
+	opacity: 1 
+.blog2:hover .more-record
+	opacity: 1
+.blog2:hover .about-view
+	opacity: 1
+.blog2:hover .fon-view
+	opacity: 1
+.blog2:hover .appear-blog-fon
+	opacity: 1
+
+.more-record
+	margin-top: 20px
+	font-family: "NotoSansBold"
+	font-size: 12px
+	font-weight: bold
+	letter-spacing: 2px
+	cursor: pointer
+	border-radius: 25px
+	border: 1px solid #fff
+	background-color: rgba(255,255,255,0.5)
+	color: #fff
+	padding: 16px 38px
+	display: block
+	margin-left: 36px
+	position: relative
+	z-index: 2
+	transition-duration: 0.7s
+	opacity: 0
+	margin-bottom: 136px
+.number-page
+	list-style: none
+	background-color: #fafafa
+	display: inline-block
+	padding: 5px
+	border-radius: 35px
+	margin-left: auto
+	margin-right: auto
+	margin-top: 42px
+	margin-bottom: 42px
+	ul
+		margin: 0px
+		padding: 0px
+.number-page li
+	display: inline-block
+	width: 32px
+	height: 32px
+	padding: 7px 13px
+	border-radius: 25px
+	color: #9c9c9c
+	font-family: "roboto-example"
+	font-weight: bold
+	font-size: 12px
+	cursor: pointer
+.number-page .active-number
+	background-color: #ff0c56
+	color: #fff
+.about-view
+	float: right
+	bottom: 35px
+	position: absolute
+	z-index: 10
+	right: 34px
+	transition-duration: 0.7s
+	opacity: 0
+.appear-blog-fon
+	width: 100%
+	height: 100%
+	background-color: rgba(0,0,0,0.5)
+	position: absolute
+	transition-duration: 0.7s
+	opacity: 0
+.wrapper-blog .fa-comments
+	display: inline-block
+	color: #ff0c56
+.wrapper-blog .number-view
+	display: inline-block
+	margin-left: 10px
+	margin-right: 60px
+.wrapper-blog .fa-eye
+	display: inline-block
+.wrapper-blog .number-comments
+	display: inline-block
+	margin-left: 10px
+	margin-right: 26px
+.sl_img-object
+	width: 100%
+	height: 100%
+
+@import "media" // Always at the end
