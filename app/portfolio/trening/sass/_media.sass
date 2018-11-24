@@ -1,0 +1,441 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+
+//Extra large: ≥1200px
++media-breakpoint-down(xl)
+
+//Large: ≥992px
++media-breakpoint-down(lg)
+	.header
+		height: 768px
+	.nav li
+		margin-left: 25px
+	.number-block .call-back
+		font-size: 12px
+	.composition
+		width: 55%
+		margin-left: auto
+		margin-right: auto
+	.sp
+		width: 100%
+	.base-goal .h1, .advice .h1, .you-get .h1, .result .h1, .teoria .h1
+		font-size: 32px
+	.base-goal .h1 span
+		font-size: 20px
+		margin-bottom: 20px
+	.teoria .h1 span
+		font-size: 20px
+		margin-bottom: 20px
+	.result .h1 span
+		font-size: 20px
+		margin-bottom: 20px
+	.number-block
+		padding-left: 0px
+	.advice .h1 span
+		font-size: 20px
+		margin-bottom: 20px
+	.you-get .h1 span
+		font-size: 20px
+		margin-bottom: 20px
+	.base-goal p
+		font-size: 15px
+	.advice .sl12 .sl .slick-next
+		height: 196px
+		background-position: -52px -20px
+	.advice .sl12 .sl .slick-prev
+		height: 196px
+		background-position: 0 -20px
+	.form-button
+		top: -45px
+	.map-site
+		margin-right: 30px
+	.text-place
+		font-size: 13px
+	//who trainer
+	.who-trainer
+		margin-bottom: 16px
+	.text-trainer-skill
+		width: 410px
+	.wrapper-plan-trainer
+		height: 279px
+	.trainer-olga img
+		width: 100%
+	.block-trainer-specialization
+		width: 290px
+	//aboutCompany
+	.user-form-input
+		width: 66%
+	.wrapper-result-3
+		display: none
+	.text-discription
+		width: 100%
+	.block-left-padding
+		padding-left: 15px
+	.number-block span
+		letter-spacing: normal
+//Medium: ≥768px
++media-breakpoint-down(md)
+	.header
+		height: 700px
+	header .nav
+		display: none
+		width: 95%
+		height: 100%
+		position: fixed
+		top: 0px
+		right: 0px
+		background-color: #263e90
+		z-index: 6
+		box-shadow: 0 0 45px rgba(0,0,0,8.5)
+	#touch-menu
+		display: block
+	.static
+		position: static
+	.navigation
+		display: block
+	.nav ul
+		padding-left: 0px
+		list-style-type: disk
+	.nav li
+		display: block
+		width: 60%
+		margin: auto
+		font-size: 18px
+		padding: 20px
+		border-top: 1px solid #fff
+		border-bottom: 1px solid #fff
+	.nav a::before
+		content: ""
+		width: 10px
+		height: 10px
+		display: inline-block
+		border-radius: 5px
+		background-color: #fff
+		margin-right: 7px
+	.sp
+		display: none
+	.wrapper-adventege
+		margin-top: 40px
+		margin-bottom: 50px
+	.pair
+		display: none
+	.descrip-adv
+		font-size: 14px
+	.advice .sl12 .sl .slick-next
+		margin-right: 5%
+		height: 164px
+		background-position: -52px -40px
+	.advice .sl12 .sl .slick-prev
+		height: 164px
+		background-position: 0px -40px
+	.scils
+		text-align: center
+		width: 90%
+		margin-right: auto
+		margin-left: auto
+		paddign-left: 10px
+		padding-right: 10px
+		font-size: 15px
+	.descrip-scils
+		font-size: 14px
+		paddign-left: 10px
+		padding-right: 10px
+		text-align: center
+		margin-bottom: 20px
+	.further
+		width: 95%
+		margin-bottom: 20px
+	.icon-bottom-line
+		margin-right: 8px
+	.contact-form input
+		width: 210px
+	.follow
+		font-size: 13px
+	.soc-icon
+		margin-left: 35px
+	.soc-icon .svg-inline--fa
+		margin-right: 14px
+	.block-do-it
+		margin-bottom: 20px
+	.number-bottom-none
+		display: none
+	.shark-place-bottom
+		font-size: 13px
+	.fa-search
+		left: 85%
+	.wrapper-adventege-last
+		border-right: 1px solid #cbcbcb
+	//who-trainer
+	.trainers-h1
+		text-align: center
+	.trainer-olga p
+		text-align: center
+	.trainer-olga img
+		width: 60%
+	.trainer-olga
+		text-align: center
+	.text-trainer-skill
+		width: 100%
+	.wrapper-plan-trainer
+		height: 206px
+	.plan-trainer-scils
+		font-size: 15px
+	.plan-trainer-descrip-scils
+		font-size: 15px
+	.wrapper-plan-big
+		height: 415px
+	.block-trainer-specialization
+		margin-left: auto
+		margin-right: auto
+		width: 70%
+		margin-bottom: 30px
+	//AboutCompany
+	.fa-search
+		left: 85%
+	.img-clientage
+		width: 100%
+	.user-form-input
+		width: 89%
+	.wrapper-result-2
+		display: none
+		//PreviewTraining
+	.preview-text
+		margin-bottom: 65px
+	.girl-for-call
+		display: none
+	.title-for-whom
+		text-align: center
+	.title-for-whom-trening
+		text-align: center
+	.for-whom-block
+		margin-bottom: 50px
+
+//Small: ≥576px
++media-breakpoint-down(sm)
+	.composition
+		width: 72%
+	.wrapper-adventege
+		margin: 30px auto
+		width: 60%
+	.pair
+		display: block
+	.descrip-adv
+		font-size: 16px
+	.base-goal .h1, .result .h1, .teoria .h1
+		margin-top: 30px
+	.you-get .h1
+		margin-top: 30px
+	.block-do-it
+		width: 40%
+		margin-left: auto
+		margin-right: auto
+		margin-top: 30px
+	.shark-place-bottom
+		width: 100%
+		margin-top: 10px
+		font-size: 16px
+		text-align: center
+	.polit
+		text-align: center
+		width: 100%
+	.map-site
+		display: none
+	.map-place
+		margin-top: 10px
+		margin-left: auto
+		margin-right: auto
+		text-align: center
+		width: 60%
+	.text-place
+		padding-bottom: 20px
+	//who-trainer
+	.wrapper-plan-trainer
+		height: 153px
+	.form-about-company button
+		margin-bottom: 50px
+	//AboutCompany
+	.border-forma-line-tel
+		height: 48px
+		padding-top: 20px
+	.neobtn-thick
+		margin-top: 19px
+	.wrapper-clip
+		left: 12%
+		top: 51%
+		//PreviewTraining
+	.preview-text h1
+		font-size: 38px
+		margin-top: 35px
+	.text-under-icon
+		font-size: 16px
+		width: 100px
+	.descrip-scils
+		padding-right: 92px
+	.table-preview
+		font-size: 12px
+
+	//trening-sales
+
+	.what-we-do
+		height: auto
+	.blue-wrapper-img
+		margin-top: 50px
+	.description-what-we-do
+		margin-bottom: 30px
+	.block-icon-price
+		margin-bottom: 0
+//Extra small: >0
++media-breakpoint-down(xs)
+	.number-block img
+		display: none
+	.logo img 
+		width: 100%
+	.number-block
+		font-size: 13px
+	.bar1, .bar2, .bar3
+		width: 40px
+		height: 5px
+	.number-block .call-back
+		font-size: 8px
+	.composition
+		width: 100%
+	.header .h1
+		font-size: 64px
+	.header .h1 .for-bussines
+		font-size: 44px
+	.header .h1 .begin-get
+		font-size: 19px
+	.wrapper-adventege
+		width: 100%
+	.base-goal .h1, .advice .h1, .you-get .h1, .result .h1, .teoria .h1
+		font-size: 23px
+		margin-top: 30px
+	.teoria .h1 span
+		font-size: 15px
+		margin-top: 0px
+	.base-goal .h1 span
+		font-size: 15px
+		margin-top: 0px
+	.result .h1 span
+		font-size: 15px
+		margin-top: 0px
+	.you-get .h1 span
+		font-size: 15px
+		margin-top: 0px
+	.advice .h1	span
+		font-size: 15px
+		margin-top: 0px
+	.number-block span
+		font-size: 13px
+	.advice .sl12 .sl .slick-next
+		margin-right: 7%
+		height: 70%
+	.advice .sl12 .sl .slick-prev
+		height: 70%
+	.block-do-it
+		width: 100%
+	.contact-form input
+		width: 90%
+		margin-top: 0px
+	.contact-form
+		margin-top: 0px
+	//who-trainer
+	.trainers-h1
+		font-size: 27px
+	.who-trainer div:first-child
+		width: 100%
+		font-size: 20px
+	.trainer-map-icon
+		margin-left: 10px
+	.wrapper-plan-trainer
+		height: 198px
+	.plan-trainer .plan-h2
+		font-size: 35px
+		margin-top: 25px
+		margin-bottom: 0px
+	.specialization .plan-h2
+		font-size: 35px
+	.block-trainer-specialization
+		width: 95%
+	.trainer-map-icon
+		margin-left: 30px	
+	//AboutCompany
+	.form-about-company button
+		width: 180px
+	.wrapper-result-1
+		display: none
+	.span-url
+		display: block
+		text-align: center
+		width: 100%
+		margin-bottom: 16px
+	.h1-story
+		font-size: 27px
+		text-align: center
+	.description-about-company
+		margin-top: 20px
+	.result-about .h2
+		font-size: 32px
+		line-height: 1.3
+	.form-about-company .h2
+		line-height: 1.3
+		font-size: 35px
+	.form-about-company
+		padding-top: 50px
+	.wrapper-clip
+		left: 20%
+		top: 48%	
+		//PreviewTraining
+	.effect
+		height: 100%
+	.effect-preview .want-get
+		margin-bottom: 25px
+	.preview-text p
+		padding-left: 15px
+		padding-right: 15px
+		font-size: 16px
+	.preview-text h1
+		font-size: 25px
+	.preview-text span
+		font-size: 18px
+	.text-under-icon
+		font-size: 12px
+		width: 72px
+	.learning-process h1
+		font-size: 29px
+	.learning-process span
+		font-size: 18px
+	.learning-process
+		margin-top: 25px
+		margin-bottom: 30px
+	.block-line-one
+		margin-top: 50px
+	.block-line-two
+		margin-bottom: 50px
+	.for-whom-block
+		margin-left: auto
+		margin-right: auto
+		//trening-sales
+	.advantages-trening-block
+		padding-left: 15px
+	.advantages-trening-block .h2
+		font-size: 37px
+/*==========  Mobile First  ==========*/
+
+//Extra small: <576px
++media-breakpoint-up(xs)
+
+//Small: ≤576px
++media-breakpoint-up(sm)
+
+//Medium: ≤768px
++media-breakpoint-up(md)
+
+//Large: ≤992px
++media-breakpoint-up(lg)
+
+//Extra large: ≤1200px
++media-breakpoint-up(xl)
