@@ -1,0 +1,2469 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:  Scout
+Version:  1.0
+Primary use:  One page portfolio theme
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Import other stylesheets
+2. Header / .head
+    2.1 Main menu / .mainMenu
+    2.2 Menu button / .menuBtn
+3. Main styles
+    3.1 Big Image Block / .bigImgBlock
+    3.2 Small Image Block / .smallImgBlock
+    3.3 "Start a project" block / .starProjects
+    3.4 Data list icons / .dataListIsons
+    3.5 "What to expect" block / .expect
+    3.6 "A simple process" block / .process
+    3.7 Features block / .features
+    3.8 "Meet our genius" block / .owl-carousel-4
+    3.9 "Dedicated Service & Growing Community" block / .owl-carousel-2
+    3.10 "Our Application" block / .ourApp
+    3.11 "What’s Special About Us" block / .about
+    3.12 Video block / .video
+    3.13 "What Costomers Say" block / .costomers
+    3.14 Featured block / .featured
+    3.15 "Our Pricing Tables" block / .pricing
+    3.16 "Our Latest Posts" block / .latestPosts
+    3.17 Bottom block / .bottBlock
+    3.18 Map block / .mapBlock
+        3.18.1 Map table / .tableBox
+4. Footer / .footWhite
+5. ZoomIn blocks
+6. Responsive stuff
+
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+[1. Import other stylesheets]
+*/
+
+
+@charset "UTF-8";
+@import url("jquery.circliful.css");
+@import url("bootstrap.css");
+@import url("owl.carousel.css");
+@import url("style.css");
+@import url("fonts.css");
+@import url("base.css");
+
+
+/*------------------------------------------------------------------
+[2. Header / .head]
+*/
+
+
+.head {
+    overflow: hidden;
+    padding: 36px 60px;
+}
+
+.head .logo {
+    float: left;
+}
+
+#owlCarousel{
+    background: url("../img/Scout_04.png");
+     background-size: contain;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+#owlCarousel2{
+    background: url("../img/Scout_02.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+.head .logo a {
+    font-size: 0;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 4px;
+
+    display: block;
+
+    width: 116px;
+    height: 25px;
+
+    color: transparent;
+    background: url(../img/logo.png) no-repeat;
+}
+
+
+/* [2.1 Main menu / .mainMenu] */
+
+.head .mainMenu {
+    font-family: 'Montserrat Bold';
+
+    margin-left: 120px;
+    padding-top: 4px;
+}
+
+
+.head .mainMenu ul {
+    text-align: right;
+}
+
+.head .mainMenu ul li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.head .mainMenu ul li a {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 18px;
+
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -o-transition: all 300ms;
+    transition: all 300ms;
+    text-transform: uppercase;
+
+    color: #7f7f7f;
+}
+
+
+.head .mainMenu ul li:first-child {
+    margin-left: 0px;
+}
+
+.head .mainMenu ul li.active a, .head .mainMenu ul li:hover a {
+    color: #000;
+}
+
+/* [2.2 Menu button / .menuBtn] */
+
+.head .menuBtn {
+    display: none;
+    float: right;
+
+    width: 60px;
+    margin-top: 4px;
+}
+
+
+.head .menuBtn div {
+    height: 1px;
+    margin-bottom: 9px;
+
+    background: #000;
+}
+
+
+.head .menuBtn div:last-child {
+    margin-bottom: 0px;
+}
+
+.head .menuBtn.open div {
+    background: #ff2b67;
+}
+
+
+/*------------------------------------------------------------------
+[3. Main styles]
+*/
+
+
+.main > div > div {
+    opacity:0;
+}
+
+.owl-carousel.owl-loaded {
+    margin:-1px 0 0;
+}
+
+.r-brd { border-right:  #fff 1px solid; }
+.l-brd { border-left:   #fff 1px solid; }
+.b-brd { border-bottom: #fff 1px solid; }
+.t-brd { border-top:    #fff 1px solid; }
+
+/* [3.1 Big Image Block / .bigImgBlock] */
+
+.bigImgBlock {
+    font-family: 'Montserrat Bold';
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.bigImgBlock .box {
+    position: relative;
+
+    float: left;
+
+    width: 50%;
+    height: 500px;
+}
+
+
+.bigImgBlock .box img {
+    width: 100%;
+}
+
+.bigImgBlock .box h2 {
+    font-size: 36px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 40px;
+
+    position: absolute;
+    top: 50%;
+
+    width: 100%;
+    margin-top: -20px;
+
+    text-align: center;
+
+    color: #fff;
+}
+
+
+.bigImgBlock .box:nth-child(1) {
+    background: url(../img/big-img1.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.bigImgBlock .box:nth-child(2) {
+    background: url(../img/big-img2.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.bigImgBlock .box:nth-child(3) {
+    background: url(../img/big-img3.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.bigImgBlock .box:nth-child(4) {
+    background: url(../img/big-img4.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.bigImgBlock .centralBlock {
+    position: absolute;
+    top: 50%;
+    left: -181px;
+
+    margin-top: -195px;
+    margin-left: 50%;
+    padding: 90px 50px;
+
+    border: solid 1px #fff;
+    background:    -moz-linear-gradient(top, rgba(255, 93, 59, .95) 0%, rgba(255, 43, 104, .95) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 93, 59, .95)), color-stop(100%, rgba(255, 43, 104, .95)));
+    background: -webkit-linear-gradient(top, rgba(255, 93, 59, .95) 0%, rgba(255, 43, 104, .95) 100%);
+    background:      -o-linear-gradient(top, rgba(255, 93, 59, .95) 0%, rgba(255, 43, 104, .95) 100%);
+    background:     -ms-linear-gradient(top, rgba(255, 93, 59, .95) 0%, rgba(255, 43, 104, .95) 100%);
+    background:         linear-gradient(to bottom, rgba(255, 93, 59, .95) 0%, rgba(255, 43, 104, .95) 100%);
+
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ff5d3b', endColorstr='#f2ff2b68',GradientType=0 );
+}
+
+
+.bigImgBlock .centralBlock span {
+    font-size: 69px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 73px;
+    line-height: 69px;
+
+    display: block;
+
+    text-transform: uppercase;
+
+    color: #fff;
+}
+
+
+.bigImgBlock .centralBlock span:nth-child(2) {
+    font-size: 63px;
+    line-height: 63px;
+}
+
+.bigImgBlock .centralBlock span:nth-child(3) {
+    font-size: 72px;
+    line-height: 72px;
+}
+
+
+/* [3.2 Small Image Block / .smallImgBlock] */
+
+.smallImgBlock {
+    overflow: hidden;
+    position: relative;
+}
+
+.smallImgBlock .centerBlock {
+    font-family: 'Raleway Light';
+
+    position: absolute;
+    z-index: 99;
+    top: 50%;
+
+    width: 100%;
+    margin-top: -91px;
+
+    text-align: center;
+}
+
+.smallImgBlock .centerBlock span {
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 22px;
+
+    color: #ff2a68;
+}
+
+.smallImgBlock .centerBlock span:after, .smallImgBlock .centerBlock span:before {
+    display: inline-block;
+
+    width: 30px;
+    height: 1px;
+
+    content: '';
+    vertical-align: middle;
+
+    background: #eee;
+}
+
+
+.smallImgBlock .centerBlock span:before {
+    margin-right: 10px;
+}
+
+.smallImgBlock .centerBlock span:after {
+    margin-left: 10px;
+}
+
+.smallImgBlock .centerBlock h3 {
+    font-family: 'Montserrat Bold';
+    font-size: 48px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 52px;
+
+    padding: 20px 0 25px;
+
+    color: #000;
+}
+
+.smallImgBlock .centerBlock p {
+    font-family: 'Montserrat Bold';
+    font-size: 23px;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    max-width: 724px;
+    padding: 40px 20px;
+    text-align: left;
+    color: #000;
+}
+
+.smallImgBlock .centerBlock ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.smallImgBlock .centerBlock ul li a {
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 22px;
+
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -o-transition: all 300ms;
+    transition: all 300ms;
+
+    opacity: .48;
+    color: #000;
+}
+
+.z100 {
+    z-index: 100;
+}
+
+.smallImgBlock .centerBlock ul li:hover a, .smallImgBlock .centerBlock ul li.active a {
+    opacity: 1;
+}
+
+.smallImgBlock .boxSmall {
+    position: relative;
+    cursor: pointer;
+    float: left;
+
+    width: 25%;
+
+    text-align: center;
+
+    background: #000;
+}
+
+.smallImgBlock .boxSmall img {
+    width: 100%;
+
+    -webkit-transition: all 300ms linear;
+    -moz-transition: all 300ms linear;
+    -ms-transition: all 300ms linear;
+    -o-transition: all 300ms linear;
+    transition: all 300ms linear;
+    -webkit-transform: translateZ(0) scale(1, 1);
+
+    opacity: 1;
+
+    -webkit-backface-visibility: hidden;
+}
+
+.smallImgBlock .boxSmall .design {
+    position: absolute;
+    z-index: 99;
+    top: 50%;
+    left: 0;
+
+    width: 100%;
+    margin-top: -66px;
+
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -o-transition: all 300ms;
+    transition: all 300ms;
+
+    opacity: 0;
+}
+
+.smallImgBlock .boxSmall .design span {
+    font-family: 'Raleway Regular';
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 18px;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.smallImgBlock .boxSmall .design h3 {
+    font-family: 'Montserrat Bold';
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 34px;
+
+    padding: 8px 0 20px 0;
+
+    color: #fff;
+}
+
+.smallImgBlock .boxSmall .design a {
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 28px;
+    line-height: 57px;
+
+    display: inline-block;
+
+    width: 50px;
+    height: 50px;
+
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -o-transition: all 300ms;
+    transition: all 300ms;
+    text-align: center;
+
+    color: #fff;
+    background: rgba(255, 255, 255, .2);
+}
+
+.smallImgBlock .boxSmall .design a:hover {
+    background: #ff2a68;
+}
+
+.smallImgBlock .boxSmall .design strong {
+    display: block;
+}
+
+.smallImgBlock .boxSmall .design strong a {
+    font-family: 'Raleway Regular';
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 22px;
+
+    width: auto;
+    height: auto;
+
+    color: #fff;
+    background: none;
+}
+
+.smallImgBlock .boxSmall .design strong a:hover {
+    background: none;
+}
+
+.smallImgBlock .boxSmall .design .underL {
+    display: block;
+
+    width: 60px;
+    height: 1px;
+    margin: 9px auto;
+
+    background: #fff;
+}
+
+.smallImgBlock .boxSmall .design .underLsmall {
+    display: block;
+
+    width: 30px;
+    height: 1px;
+    margin: 0 auto;
+
+    background: #fff;
+}
+
+.smallImgBlock .boxSmall.w50 {
+    width: 50%;
+    background: #fff;
+}
+
+.smallImgBlock .boxSmall:hover img {
+    opacity: 0.1;
+}
+
+.smallImgBlock .boxSmall:hover .design {
+    opacity: 1;
+}
+
+.owl-carousel .owl-item{
+    border-right:#fff 1px solid;
+}
+
+.owl-carousel .owl-stage-outer{
+    border-top:#fff 1px solid;
+}
+
+/* [3.3 Start a project / .starProjects] */
+
+.starProjects {
+    border-top: #fff 1px solid;
+    background: #ff2b67;
+    background:    -moz-linear-gradient(left, #ff2b67 0%, #ff5d3a 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #ff2b67), color-stop(100%, #ff5d3a));
+    background: -webkit-linear-gradient(left, #ff2b67 0%, #ff5d3a 100%);
+    background:      -o-linear-gradient(left, #ff2b67 0%, #ff5d3a 100%);
+    background:     -ms-linear-gradient(left, #ff2b67 0%, #ff5d3a 100%);
+    background:         linear-gradient(to right, #ff2b67 0%, #ff5d3a 100%);
+
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff2b67', endColorstr='#ff5d3a',GradientType=1 );
+}
+
+.starProjects h2 {
+    font-family: 'Raleway Thin';
+    font-size: 72px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 76px;
+
+    padding: 85px 0;
+
+    text-align: center;
+    white-space: nowrap;
+
+    color: #fff;
+}
+
+.starProjects h2:after, .starProjects h2:before {
+    display: inline-block;
+
+    width: 100px;
+    height: 1px;
+
+    content: '';
+    vertical-align: middle;
+
+    background: #eee;
+}
+
+.starProjects h2:before {
+    margin-right: 45px;
+}
+
+.starProjects h2:after {
+    margin-left: 45px;
+}
+
+.starProjects h3 {
+    font-family: 'Raleway Thin';
+    font-size: 36px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 40px;
+
+    padding: 97px 0 41px;
+
+    text-align: center;
+
+    color: #fff;
+}
+
+.starProjects span {
+    font-family: 'Montserrat Bold';
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 20px;
+
+    display: block;
+
+    padding-bottom: 100px;
+
+    text-align: center;
+
+    color: #fff;
+}
+
+
+/* [3.4 Data list icons / .dataListIsons] */
+
+.dataListIsons dt {
+    font-family: 'Montserrat Bold';
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 22px;
+
+    padding-bottom: 15px;
+    letter-spacing: 4px;
+    color: #000;
+}
+
+.dataListIsons dt span {
+    font-size: 30px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 34px;
+    line-height: 30px;
+
+    display: inline-block;
+
+    margin-right: 17px;
+
+    vertical-align: top;
+
+    color: #ff2a68;
+}
+
+.dataListIsons dt:after {
+    display: block;
+
+    width: 50px;
+    height: 1px;
+    margin: 0 0 0 50px;
+
+    content: '';
+
+    background: #eee;
+}
+
+.dataListIsons dd {
+    font-family: 'Raleway Light';
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 23px;
+    padding-bottom: 25px;
+    color: #000;
+}
+
+.dataListIsons.right {
+    text-align: right;
+}
+
+.dataListIsons.right dt {
+    overflow: hidden;
+}
+
+.dataListIsons.right dt span {
+    float: right;
+    margin-right: 0px;
+    margin-left: 17px;
+}
+
+/* [3.5 What to expect / .expect] */
+
+.expect {
+    padding-top: 150px;
+}
+
+.expect img {
+    width: 100%;
+}
+
+.expect p {
+    padding: 20px 0;
+    font-size: 18px;
+}
+
+/* [3.6 "A simple process" block / .process] */
+
+.process {
+    position: relative;
+
+    padding: 142px 0 230px;
+
+    background: url(../img/bg1.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.process .bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    opacity: .9;
+    background: rgba(255,43,103,0.9);
+    background:    -moz-linear-gradient(left, rgba(255,43,103,0.9) 0%, #ff5d3a 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #ff2b67), color-stop(100%, #ff5d3a));
+    background: -webkit-linear-gradient(left, rgba(255,43,103,0.9) 0%, #ff5d3a 100%);
+    background:      -o-linear-gradient(left, rgba(255,43,103,0.9) 0%, #ff5d3a 100%);
+    background:     -ms-linear-gradient(left, rgba(255,43,103,0.9) 0%, #ff5d3a 100%);
+    background:         linear-gradient(to right, rgba(255,43,103,0.9) 0%, #ff5d3a 100%);
+
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff2b67', endColorstr='#ff5d3a',GradientType=1 );
+}
+
+.process ul {
+    text-align: center;
+}
+
+.process ul li {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: -4px;
+}
+
+.process ul li:first-child {
+    margin-left: 0px;
+}
+
+.process ul li.line {
+    width: 170px;
+    height: 1px;
+    margin-top: 62px;
+
+    background: #fff;
+}
+
+.process ul li a {
+    display: block;
+}
+
+.process ul li div {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 32px;
+
+    -webkit-transition: all 300ms linear;
+    -moz-transition: all 300ms linear;
+    -ms-transition: all 300ms linear;
+    -o-transition: all 300ms linear;
+    transition: all 300ms linear;
+    text-align: center;
+
+    border: solid 1px #fff;
+    -webkit-border-radius: 120px;
+    -moz-border-radius: 120px;
+    border-radius: 120px;
+
+    -ms-border-radius: 120px;
+    -o-border-radius: 120px;
+}
+
+.process ul li div span {
+    font-size: 36px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 40px;
+    line-height: 120px;
+
+    color: #fff;
+}
+
+.process ul li .txt {
+    font-family: 'Montserrat Bold';
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 22px;
+
+    display: block;
+
+    color: #fff;
+}
+
+.process ul li:hover a div, .process ul li.active a div {
+    box-shadow: 0 0 0px 16px #fff;
+}
+
+/* [3.7 Features block / .features] */
+
+.features {
+    position: relative;
+    z-index: 5;
+
+    padding: 60px 0 150px;
+}
+
+
+.features .title {
+    display: none;
+}
+
+.features img {
+    width: 100%;
+    margin-top: -180px;
+}
+
+.features .dataListIsons dt:after {
+    display: none;
+}
+
+.features .dataListIsons dd:after {
+    display: inline-block;
+
+    width: 50px;
+    height: 1px;
+    margin: 26px 0 0 0;
+
+    content: '';
+
+    background: #eee;
+}
+
+.features .dataListIsons dd:last-child:after {
+    display: none;
+}
+
+/* [3.8 "Meet our genius" block / .owl-carousel-4] */
+
+.owl-carousel-4 .owl-nav {
+    position: relative;
+    z-index: 99;
+
+    display: none;
+    overflow: hidden;
+
+    margin-top: -49px;
+}
+
+.owl-carousel-4 .owl-nav .owl-prev, .owl-carousel-4 .owl-nav .owl-next {
+    font-size: 30px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 34px;
+    line-height: 48px;
+
+    width: 48px;
+
+    text-align: center;
+
+    color: #fff;
+    border: solid 1px #fff;
+}
+
+.owl-carousel-4 .owl-nav .owl-prev {
+    float: left;
+}
+
+.owl-carousel-4 .owl-nav .owl-next {
+    float: right;
+}
+
+.owl-carousel-4 .item {
+    //background: #000;
+    text-align: center;
+}
+
+#owlCarousel5 .item{
+    background: #000;
+}
+
+.owl-carousel-4 .item .chart {
+    font-family: 'Montserrat Bold';
+
+    position: absolute;
+    z-index: 10;
+    top: 40%;
+    left: -87px;
+
+    overflow: hidden;
+
+    height: 180px;
+    margin-top: -57px;
+    margin-left: 50%;
+
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -o-transition: all 300ms;
+    transition: all 300ms;
+
+    opacity: 1;
+}
+
+.owl-carousel-4 .item .chart .circle-text {
+    font-size: 24px;
+    font-size: 24px !important;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 28px;
+    line-height: 153px !important;
+
+    color: #fff;
+}
+
+.owl-carousel-4 .item .chart .circle-info-half {
+    font-size: 11px;
+    font-size: 11px !important;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 15px;
+    line-height: 190px !important;
+
+    text-transform: uppercase;
+
+    color: #fff;
+}
+
+.owl-carousel-4 .item .chartin {
+    position: absolute;
+    z-index: 10;
+    top: 40%;
+    left: -58px;
+
+    width: 112px;
+    height: 112px;
+    margin-top: -28px;
+    margin-left: 50%;
+
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -o-transition: all 300ms;
+    transition: all 300ms;
+
+    opacity: 1;
+    border: 1px solid #fff;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+
+.owl-carousel-4 .item .design {
+    position: absolute;
+    z-index: 99;
+    top: 50%;
+    left: 0;
+
+    width: 100%;
+    margin-top: -66px;
+
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -o-transition: all 300ms;
+    transition: all 300ms;
+
+    opacity: 0;
+}
+
+.owl-carousel-4 .item .design i {
+    font-size: 36px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 40px;
+
+    color: #ff2a68;
+}
+
+.owl-carousel-4 .item .design h3 {
+    font-family: 'Montserrat Bold';
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 28px;
+
+    padding: 8px 0 20px 0;
+
+    color: #fff;
+}
+
+.owl-carousel-4 .item .design p {
+    font-family: 'Raleway Regular';
+    font-size: 1.1rem;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 18px;
+
+    padding: 0 40px;
+
+    color: #fff;
+}
+
+.owl-carousel-4 .item .design .underL {
+    display: block;
+
+    width: 60px;
+    height: 1px;
+    margin: 9px 0;
+
+    background: #fff;
+}
+
+.owl-carousel-4 .item .design .underLsmall {
+    display: block;
+
+    width: 30px;
+    height: 1px;
+
+    background: #fff;
+}
+
+.owl-carousel-4 .item .design.left {
+    margin-top: -90px;
+    padding: 0 50px;
+
+    text-align: left;
+}
+
+.owl-carousel-4 .item .design.left p {
+    padding: 0px;
+    padding-bottom: 20px;
+}
+
+.owl-carousel-4 .item .design.left p.comm {
+    font-family: 'Raleway Medium';
+}
+
+.owl-carousel-4 .item img {
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -o-transition: all 300ms;
+    transition: all 300ms;
+
+    opacity: 1;
+}
+
+.owl-carousel-4 .item:hover img, .owl-carousel-4 .item:hover .chartin, .owl-carousel-4 .item:hover .chart {
+    opacity: 0.2;
+}
+
+.owl-carousel-4 .item:hover .design {
+    opacity: 1;
+}
+
+.owl-carousel-4.redBtn {
+    position: relative;
+}
+
+.owl-carousel-4.redBtn .owl-nav {
+    position: absolute;
+    z-index: 99;
+    top: -62px;
+
+    display: none;
+    overflow: hidden;
+
+    width: 100%;
+    margin: 0;
+
+    text-align: center;
+}
+
+.owl-carousel-4.redBtn .owl-nav .owl-prev, .owl-carousel-4.redBtn .owl-nav .owl-next {
+    font-size: 30px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 34px;
+    line-height: 48px;
+
+    display: inline-block;
+    float: none;
+
+    width: 48px;
+
+    text-align: center;
+
+    color: #fff;
+    border: solid 1px #fff;
+    background: #ff2a68;
+}
+
+/* [3.9 "Dedicated Service & Growing Community" block / .owl-carousel-2] */
+.owl-carousel-2 .owl-nav {
+    position: relative;
+    z-index: 99;
+
+    display: none;
+    overflow: hidden;
+
+    margin-top: -140px;
+
+    text-align: center;
+}
+
+.owl-carousel-2 .owl-nav .owl-prev, .owl-carousel-2 .owl-nav .owl-next {
+    font-size: 30px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 34px;
+    line-height: 48px;
+
+    display: inline-block;
+
+    width: 48px;
+
+    text-align: center;
+
+    color: #fff;
+    border: solid 1px #fff;
+}
+
+.owl-carousel-2 .item {
+    text-align: center;
+
+    //background: #000;
+    //background: rgba(0, 0, 0, .95);
+}
+
+.owl-carousel-2 .item .design {
+    padding: 200px 0;
+}
+
+.owl-carousel-2 .item .design i {
+    font-size: 80px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 84px;
+
+    color: #ff2a68;
+}
+
+.owl-carousel-2 .item .design h3 {
+    font-family: 'Montserrat Bold';
+    font-size: 48px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 52px;
+
+    padding: 53px 0 34px 0;
+
+    color: #fff;
+}
+
+.owl-carousel-2 .item .design h3:after {
+    display: block;
+
+    width: 110px;
+    height: 1px;
+    margin: 0 auto;
+    margin-top: 43px;
+
+    content: '';
+
+    background: #fff;
+}
+
+.owl-carousel-2 .item .design p {
+    font-family: 'Raleway Light';
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 22px;
+
+    padding: 0 124px;
+
+    color: #fff;
+}
+
+/* [3.10 "Our Application" block / .ourApp] */
+
+.ourApp .dataListIsons dt, .ourApp .dataListIsons.right dt {
+    padding-bottom: 0px;
+}
+
+.ourApp .dataListIsons dt span, .ourApp .dataListIsons.right dt span {
+    display: inline-block;
+    float: none;
+
+    margin: 0 0 30px 0;
+}
+
+
+.ourApp .dataListIsons dd:after, .ourApp .dataListIsons.right dd:after {
+    margin: 0px;
+}
+
+/* [3.11 "What’s Special About Us" block / .about] */
+
+.about {
+    position: relative;
+
+    padding: 142px 0 0 0;
+
+    border-bottom: #fff 1px solid;
+    background: url(../img/bg2.jpg) center no-repeat;
+    background-size: cover;
+}
+
+
+.about .owl-carousel .owl-item, .about .owl-carousel{
+    border:none;
+}
+
+.about:after {
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    left: -45px;
+
+    margin-left: 50%;
+
+    content: '';
+
+    border-top: 45px solid #fff;
+    border-right: 45px solid transparent;
+    border-left: 45px solid transparent;
+}
+
+.about .bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    opacity: .9;
+    background: #ff2b67;
+    background:    -moz-linear-gradient(left, rgba(255,43,103,0.9) 0%, #ff5d3a 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #ff2b67), color-stop(100%, #ff5d3a));
+    background: -webkit-linear-gradient(left, rgba(255,43,103,0.9) 0%, #ff5d3a 100%);
+    background:      -o-linear-gradient(left, rgba(255,43,103,0.9) 0%, #ff5d3a 100%);
+    background:     -ms-linear-gradient(left, rgba(255,43,103,0.9) 0%, #ff5d3a 100%);
+    background:         linear-gradient(to right, rgba(255,43,103,0.9) 0%, #ff5d3a 100%);
+
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff2b67', endColorstr='#ff5d3a',GradientType=1 );
+}
+
+.owl-carousel-red {
+    border-top: 1px solid #fff;
+}
+
+.owl-carousel-red .owl-nav {
+    position: relative;
+    z-index: 99;
+
+    display: none;
+    overflow: hidden;
+
+    margin-top: -49px;
+}
+
+.owl-carousel-red .owl-nav .owl-prev, .owl-carousel-red .owl-nav .owl-next {
+    font-size: 30px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 34px;
+    line-height: 48px;
+
+    width: 48px;
+
+    text-align: center;
+
+    color: #fff;
+    border: solid 1px #fff;
+}
+
+.owl-carousel-red .owl-nav .owl-prev {
+    float: left;
+}
+
+.owl-carousel-red .owl-nav .owl-next {
+    float: right;
+}
+
+.owl-carousel-red .item {
+    text-align: center;
+}
+
+.owl-carousel-red .item .design {
+    padding: 150px 0 60px 0;
+
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -o-transition: all 300ms;
+    transition: all 300ms;
+
+    border-right: 1px solid #fff;
+}
+
+.owl-carousel-red .item .design i {
+    font-size: 45px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 49px;
+
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -o-transition: all 300ms;
+    transition: all 300ms;
+
+    color: #fff;
+}
+
+.owl-carousel-red .item .design h3 {
+    font-family: 'Montserrat Bold';
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 28px;
+
+    min-height: 56px;
+    margin: 25px 0 25px 0;
+
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -o-transition: all 300ms;
+    transition: all 300ms;
+
+    color: #fff;
+}
+
+.owl-carousel-red .item .design p {
+    font-family: 'Raleway Light';
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 18px;
+
+    overflow: hidden;
+
+    padding: 0 60px;
+
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -o-transition: all 300ms;
+    transition: all 300ms;
+
+    opacity: 0;
+    color: #000;
+}
+
+.owl-carousel-red .item:hover {
+    background: #fff;
+}
+
+.owl-carousel-red .item:hover .design i {
+    color: #ff2a68;
+}
+
+.owl-carousel-red .item:hover .design h3 {
+    color: #000;
+}
+
+.owl-carousel-red .item:hover .design p {
+    opacity: 1;
+}
+
+/* [3.12 Video block / .video] */
+.video {
+    position:relative;
+}
+
+.video .bg {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 700px;
+
+    background: url(../img/video-bg.jpg) no-repeat center 0;
+}
+
+.video iframe, #video-wrap {
+    display: block;
+
+    width: 100%;
+    height: 700px;
+}
+
+.video ul {
+    overflow: hidden;
+
+    border-top: 1px solid #fff;
+    background: #ff2a68;
+    background:    -moz-linear-gradient(left, #ff2a68 0%, #ff5e3a 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #ff2a68), color-stop(100%, #ff5e3a));
+    background: -webkit-linear-gradient(left, #ff2a68 0%, #ff5e3a 100%);
+    background:      -o-linear-gradient(left, #ff2a68 0%, #ff5e3a 100%);
+    background:     -ms-linear-gradient(left, #ff2a68 0%, #ff5e3a 100%);
+    background:         linear-gradient(to right, #ff2a68 0%, #ff5e3a 100%);
+
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff2a68', endColorstr='#ff5e3a',GradientType=1 );
+}
+
+.video ul li {
+    font-family: 'Montserrat Bold';
+    font-size: 11px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 15px;
+
+    float: left;
+
+    width: 25%;
+    padding: 54px 0;
+
+    text-align: center;
+
+    color: #fff;
+    border-right: 1px solid #fff;
+}
+
+.video ul li:last-child {
+    border: none;
+}
+
+.video ul li i {
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 28px;
+
+    color: #fff;
+}
+
+.video ul li span {
+    font-size: 30px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 34px;
+
+    display: block;
+
+    padding: 28px 0;
+
+    color: #fff;
+}
+
+/* [3.13 "What Costomers Say" block / .costomers] */
+
+.costomers {
+    padding-top: 147px;
+
+    text-align: center;
+}
+
+.costomers i {
+    font-family: 'Montserrat Bold';
+    font-size: 130px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 134px;
+    line-height: 70px;
+
+    color: #ff2a68;
+}
+
+.costomers p {
+    font-family: 'Raleway Light';
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 28px;
+
+    padding-bottom: 100px;
+
+    color: #000;
+}
+
+.costomers table {
+    position: relative;
+    z-index: 99;
+
+    width: 100%;
+}
+
+.costomers table td {
+    font-family: 'Raleway Light';
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 16px;
+
+    height: 150px;
+
+    color: #666;
+    border: solid 1px #ecf0f1;
+    background: #fff;
+}
+
+.costomers table td span {
+    font-family: 'Montserrat Bold';
+    font-size: 11px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 15px;
+
+    display: none;
+
+    text-transform: uppercase;
+
+    color: #000;
+}
+
+.costomers .owl-carousel {
+    margin-top: -5px;
+}
+
+.costomers .item {
+    font-family: 'Raleway Light';
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 16px;
+
+    height: 0;
+
+    color: #666;
+}
+
+.costomers .item span {
+    font-family: 'Montserrat Bold';
+    font-size: 11px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 15px;
+
+    display: block;
+
+    text-transform: uppercase;
+
+    color: #000;
+}
+
+.costomers .item img {
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -o-transition: all 300ms;
+    transition: all 300ms;
+
+    opacity: 1;
+}
+
+.costomers .owl-nav {
+    position: relative;
+    z-index: 99;
+
+    display: none;
+    overflow: hidden;
+
+    margin-top: 10px;
+
+    text-align: center;
+}
+
+.costomers .owl-nav .owl-prev, .costomers .owl-nav .owl-next {
+    font-size: 30px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 34px;
+    line-height: 48px;
+
+    display: inline-block;
+
+    width: 48px;
+
+    text-align: center;
+
+    color: #fff;
+    border: solid 1px #fff;
+    background: #ff2a68;
+}
+
+/* [3.14 Featured block / .featured] */
+
+.featured {
+    /*padding-top: 144px;*/
+}
+
+.featured .bigImg {
+    width: 100%;
+}
+
+.featured .boxSmall {
+    border-right: #fff 1px solid;
+}
+
+/* [3.15 "Our Pricing Tables" block / .pricing] */
+
+.pricing {
+    padding-top: 142px;
+}
+
+.pricing .pricingList {
+    overflow: hidden;
+
+    text-align: center;
+}
+
+.pricing .pricingList .pricingItem {
+    float: left;
+    cursor: pointer;
+    width: 25%;
+    padding: 60px 15px;
+
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -o-transition: all 300ms;
+    transition: all 300ms;
+
+    border-right: 1px solid #eee;
+    background: #fff;
+}
+
+.pricing .pricingList .pricingItem:last-child, .pricing .pricingList .pricingItem.active {
+    border: none;
+}
+
+.pricing .pricingList .pricingItem:hover{
+    border: none;
+    background: #ff5d3b;
+    background:    -moz-linear-gradient(top, #ff5d3b 0%, #ff2a68 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff5d3b), color-stop(100%, #ff2a68));
+    background: -webkit-linear-gradient(top, #ff5d3b 0%, #ff2a68 100%);
+    background:      -o-linear-gradient(top, #ff5d3b 0%, #ff2a68 100%);
+    background:     -ms-linear-gradient(top, #ff5d3b 0%, #ff2a68 100%);
+    background:         linear-gradient(to bottom, #ff5d3b 0%, #ff2a68 100%);
+}
+
+.pricing .pricingList .pricingItem h2 {
+    font-family: 'Montserrat Bold';
+    font-size: 30px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 34px;
+
+    padding-bottom: 33px;
+
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -o-transition: all 300ms;
+    transition: all 300ms;
+
+    color: #000;
+}
+
+.pricing .pricingList .pricingItem .price {
+    display: inline-block;
+
+    width: 180px;
+    height: 180px;
+
+    border: solid 1px #f1f1f1;
+    -webkit-border-radius: 180px;
+    -moz-border-radius: 180px;
+    border-radius: 180px;
+
+    -ms-border-radius: 180px;
+    -o-border-radius: 180px;
+}
+
+.pricing .pricingList .pricingItem .price .priceIn {
+    font-family: 'Montserrat Bold';
+    font-size: 48px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 52px;
+
+    display: inline-block;
+
+    width: 150px;
+    height: 150px;
+    margin-top: 15px;
+    padding-top: 35px;
+
+    color: #000;
+    border: solid 1px #eee;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    border-radius: 150px;
+    background: #fff;
+
+    -ms-border-radius: 150px;
+    -o-border-radius: 150px;
+}
+
+.pricing .pricingList .pricingItem .price .priceIn span {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 18px;
+
+    display: block;
+
+    color: #000;
+}
+
+.pricing .pricingList .pricingItem ul {
+    padding: 58px 0;
+}
+
+.pricing .pricingList .pricingItem ul li {
+    font-family: 'Raleway Medium';
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 22px;
+    line-height: 24px;
+
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -o-transition: all 300ms;
+    transition: all 300ms;
+
+    color: #000;
+}
+
+.pricing .pricingList .pricingItem a {
+    font-family: 'Montserrat Bold';
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 22px;
+
+    display: inline-block;
+
+    padding: 14px 34px;
+
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -o-transition: all 300ms;
+    transition: all 300ms;
+
+    color: #000;
+    border: solid 1px #eee;
+}
+
+.pricing .pricingList .pricingItem a:hover {
+    color: #fff;
+    border: solid 1px #eee;
+    background: #ff2a68;
+}
+
+.pricing .pricingList .pricingItem.active {
+    background: #ff5d3b;
+    background:    -moz-linear-gradient(top, #ff5d3b 0%, #ff2a68 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff5d3b), color-stop(100%, #ff2a68));
+    background: -webkit-linear-gradient(top, #ff5d3b 0%, #ff2a68 100%);
+    background:      -o-linear-gradient(top, #ff5d3b 0%, #ff2a68 100%);
+    background:     -ms-linear-gradient(top, #ff5d3b 0%, #ff2a68 100%);
+    background:         linear-gradient(to bottom, #ff5d3b 0%, #ff2a68 100%);
+
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5d3b', endColorstr='#ff2a68',GradientType=0 );
+}
+
+.pricing .pricingList .pricingItem.active h2, .pricing .pricingList .pricingItem.active ul li {
+    color: #fff;
+}
+
+.pricing .pricingList .pricingItem.active a {
+    border: solid 1px #fff;
+    background: #fff;
+}
+
+.pricing .pricingList .pricingItem.active a:hover {
+    color: #fff;
+    border: solid 1px #fff;
+    background: #ff2a68;
+}
+
+/* [3.16 "Our Latest Posts" block / .latestPosts] */
+
+.latestPosts {
+    padding-top: 142px;
+}
+
+/* [3.17 Bottom block / .bottBlock] */
+
+.bottBlock {
+    overflow: hidden;
+
+    border-top: #fff 1px solid;
+}
+
+.bottBlock .box {
+    position: relative;
+
+    float: left;
+
+    width: 50%;
+
+    background: #e65434;
+    background:    -moz-linear-gradient(top, #e65434 0%, #e6265e 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e65434), color-stop(100%, #e6265e));
+    background: -webkit-linear-gradient(top, #e65434 0%, #e6265e 100%);
+    background:      -o-linear-gradient(top, #e65434 0%, #e6265e 100%);
+    background:     -ms-linear-gradient(top, #e65434 0%, #e6265e 100%);
+    background:         linear-gradient(to bottom, #e65434 0%, #e6265e 100%);
+
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e65434', endColorstr='#e6265e',GradientType=0 );
+}
+
+.bottBlock .box .in {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    opacity: .1;
+    background: url(../img/big-img5.jpg) no-repeat;
+    background-size: cover;
+}
+
+.bottBlock .box .body {
+    position: relative;
+    z-index: 99;
+
+    height: 700px;
+    padding: 0 15px;
+    padding-top: 200px;
+
+    text-align: center;
+}
+
+.bottBlock .box .body span {
+    font-family: 'Raleway Light';
+    font-size: 30px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 34px;
+
+    color: #fff;
+}
+
+.bottBlock .box .body h3 {
+    font-family: 'Montserrat Bold';
+    font-size: 60px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 64px;
+
+    padding: 45px 0 75px;
+
+    color: #fff;
+}
+
+.bottBlock .box .body div {
+    height: 1px;
+    margin: 0 auto;
+    margin-bottom: 18px;
+
+    background: #fff;
+}
+
+.bottBlock .box .body div.underLsmall {
+    width: 70px;
+}
+
+.bottBlock .box .body div.underL {
+    width: 140px;
+}
+
+.bottBlock .box .body a {
+    font-family: 'Montserrat Bold';
+    font-size: 30px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 34px;
+
+    display: inline-block;
+
+    margin-bottom: 18px;
+
+    text-transform: uppercase;
+
+    color: #fff;
+}
+
+.bottBlock .box:last-child {
+    background: #000;
+}
+
+.bottBlock .box:last-child .in {
+    background: url(../img/big-img6.jpg) no-repeat;
+    background-size: cover;
+}
+
+/* [3.18 Map block / .mapBlock] */
+
+.mapBlock {
+    height: 550px;
+}
+
+/* [3.18.1 Map table / .tableBox] */
+
+.tableBox {
+    margin-top: -200px;
+
+    background: #e6265e;
+    background:    -moz-linear-gradient(left, #e6265e 0%, #e65434 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #e6265e), color-stop(100%, #e65434));
+    background: -webkit-linear-gradient(left, #e6265e 0%, #e65434 100%);
+    background:      -o-linear-gradient(left, #e6265e 0%, #e65434 100%);
+    background:     -ms-linear-gradient(left, #e6265e 0%, #e65434 100%);
+    background:         linear-gradient(to right, #e6265e 0%, #e65434 100%);
+
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6265e', endColorstr='#e65434',GradientType=1 );
+}
+
+
+.tableBox table {
+    width: 100%;
+}
+
+.tableBox table td {
+    font-family: 'Montserrat Bold';
+    font-size: 30px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 34px;
+
+    height: 200px;
+
+    text-align: center;
+
+    color: #fff;
+    border: solid 1px #fff;
+}
+
+.tableBox table td i {
+    font-size: 48px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 52px;
+
+    color: #fff;
+}
+
+.tableBox table td:nth-child(2) {
+    width: 50%;
+
+    background: url(../img/foot-img.png) center no-repeat;
+    background-size: cover;
+}
+
+.tableBox table td span {
+    display: block;
+}
+
+
+/*------------------------------------------------------------------
+[4. Footer / .footWhite]
+*/
+
+
+.footWhite {
+    padding: 65px 0 60px;
+
+    text-align: center;
+}
+
+.footWhite a {
+    font-size: 0;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 4px;
+
+    display: inline-block;
+
+    width: 116px;
+    height: 25px;
+    margin-bottom: 25px;
+
+    color: transparent;
+    background: url(../img/logo.png) no-repeat;
+}
+
+.footWhite span {
+    font-family: 'Montserrat Bold';
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 16px;
+
+    display: block;
+
+    color: #000;
+}
+
+
+/*------------------------------------------------------------------
+[5. ZoomIn blocks]
+*/
+
+
+#zoomin_container {
+    position: absolute;
+    z-index: -1;
+
+    width: 100%;
+    height: 100%;
+}
+
+#wunderland {
+    height: 100%;
+}
+
+#zoomin_container .closebtn {
+    font-size: 3em;
+
+    position: absolute;
+    z-index: 1;
+    top: 30px;
+    right: 40px;
+}
+
+#zoomin_container .closebtn:hover {
+    cursor: pointer;
+
+    color: #ff2a68;
+}
+
+.stop-scrolling {
+    overflow: hidden;
+}
+
+.hiddenarea {
+    display: none;
+}
+
+.bgimage {
+    width: 100%;
+    height: 100%;
+
+    background: url(../img/big-img5.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.bigDescription {
+    font-size: 1.3em;
+
+    padding: 30%;
+    padding-top: 10%;
+
+    color: black;
+}
+
+.bigDescription center {
+    padding: 30px;
+}
+
+
+
+/*------------------------------------------------------------------
+[6. Responsive stuff]
+*/
+
+
+@media(max-width:1200px) {
+    .head .mainMenu ul li {
+        margin-left: 20px;
+    }
+    .process ul li.line {
+        width: 120px;
+    }
+}
+
+@media(max-width:992px) {
+    .head {
+        padding: 20px 60px;
+    }
+    .head .menuBtn {
+        display: block;
+    }
+    .head .mainMenu {
+        margin: 30px -60px 0 -60px;
+        padding-top: 0px;
+        overflow: hidden;
+    }
+    .head .mainMenu ul {
+        margin-top: 20px;
+        border-top: 1px solid #eeeeee;
+        padding-top: 50px;
+        display: none;
+    }
+    .head .mainMenu ul li {
+        margin-left: 0px;
+        display: block;
+        text-align: center;
+    }
+    .head .mainMenu ul li a {
+        display: block;
+        line-height: 32px;
+    }
+    .expect {
+        text-align: center;
+    }
+    .expect p {
+        padding-top: 10px;
+    }
+    .expect .dataListIsons dt span {
+        display: block;
+        margin: 0 0 30px 0;
+        font-size: 48px;
+    }
+    .expect .dataListIsons dt:after {
+        margin: 15px auto 0;
+    }
+    .expect .dataListIsons dd {
+        padding-bottom: 48px;
+    }
+    .features .title {
+        display: block;
+    }
+    .features .dataListIsons.right {
+        text-align: left;
+    }
+    .features .dataListIsons.right dt span {
+        float: none;
+        margin-left: 0px;
+        margin-right: 17px;
+    }
+    .process ul li.line {
+        width: 45px;
+    }
+    .smallImgBlock .centerBlock p {
+        font-size: 20px;
+        line-height: 22px;
+        padding: 0 15px;
+    }
+    .ourApp {
+        padding-bottom: 0px;
+    }
+    .ourApp .dataListIsons, .ourApp .dataListIsons.right {
+        text-align: center;
+    }
+    .ourApp .dataListIsons span, .ourApp .dataListIsons.right span {
+        font-size: 48px;
+        line-height: 52px;
+        margin: 0 0 30px 0!important;
+    }
+    .owl-carousel-red .item .design p {
+        padding: 0 25px;
+    }
+    .owl-carousel-4.redBtn .owl-nav {
+        display: block;
+    }
+}
+
+@media(max-width:992px) and (min-width:767px) {
+    .owl-carousel-4 .item .design.left {
+        margin-top: -40px;
+    }
+    .owl-carousel-4 .item .design.left p {
+        display: none;
+    }
+    .smallImgBlock .centerBlock {
+        margin-top: -52px;
+    }
+    .smallImgBlock .centerBlock h3 {
+        font-size: 34px;
+        line-height: 40px;
+        padding: 10px 0;
+    }
+    .smallImgBlock .centerBlock p {
+        font-size: 20px;
+        line-height: 22px;
+        padding: 0 15px;
+    }
+    .smallImgBlock .boxSmall .design h3 {
+        padding: 10px 0;
+        font-size: 20px;
+    }
+    .owl-carousel-4 .item .design h3 {
+        padding: 5px 0;
+        font-size: 15px;
+    }
+    .owl-carousel-4 .item .design p {
+        font-size: 10px;
+        padding: 0 15px;
+    }
+    .pricing .pricingList .pricingItem .price {
+        width: 100px;
+        height: 100px;
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        -ms-border-radius: 100px;
+        -o-border-radius: 100px;
+        border-radius: 100px;
+    }
+    .pricing .pricingList .pricingItem .price .priceIn {
+        width: 90px;
+        height: 90px;
+        -webkit-border-radius: 90px;
+        -moz-border-radius: 90px;
+        -ms-border-radius: 90px;
+        -o-border-radius: 90px;
+        border-radius: 90px;
+        margin-top: 5px;
+        font-size: 30px;
+        line-height: 25px;
+        padding-top: 20px;
+    }
+}
+
+@media(max-width:767px) {
+    .bigImgBlock .box {
+        height: 280px;
+    }
+    .bottBlock .box {
+        float: none;
+        width: 100%;
+    }
+    .bigImgBlock .box h2 {
+        display: none;
+    }
+    .bigImgBlock .centralBlock {
+        padding: 55px 35px;
+        left: -116px;
+        margin-top: -118px;
+    }
+    .bigImgBlock .centralBlock span {
+        font-size: 42px;
+        line-height: 42px;
+    }
+    .bigImgBlock .centralBlock span:nth-child(2) {
+        font-size: 38px;
+        line-height: 38px;
+    }
+    .bigImgBlock .centralBlock span:nth-child(3) {
+        font-size: 44px;
+        line-height: 44px;
+    }
+    .smallImgBlock .boxSmall {
+        float: none;
+        width: auto;
+    }
+    .smallImgBlock .boxSmall.w50 {
+        display: none;
+    }
+    .smallImgBlock .centerBlock {
+        position: static;
+        margin: 98px 0 76px;
+    }
+    .starProjects h2 {
+        font-size: 36px;
+    }
+    .starProjects h2:before {
+        width: 60px;
+        margin-right: 35px;
+    }
+    .starProjects h2:after {
+        width: 60px;
+        margin-left: 35px;
+    }
+    .starProjects h3 {
+        padding: 75px 15px 40px 15px;
+    }
+    .starProjects span {
+        padding-bottom: 75px;
+    }
+    .process ul li.line {
+        margin-top: 19px;
+    }
+    .process ul li div {
+        width: auto;
+        height: auto;
+        border: none;
+    }
+    .process ul li div span {
+        line-height: 36px;
+    }
+    .process ul li:hover a div, .process ul li.active a div {
+        box-shadow: none;
+    }
+    .owl-carousel-2 .item .design {
+        padding: 90px 0 180px;
+    }
+    .owl-carousel-2 .item .design p {
+        padding: 0 15px;
+    }
+    .owl-carousel-red .item .design {
+        border: none;
+    }
+    .owl-carousel-red .owl-nav, .owl-carousel-4 .owl-nav {
+        display: block;
+    }
+    .owl-carousel-2 .owl-nav {
+        display: block;
+        padding-bottom: 90px;
+    }
+    .video iframe {
+        height: 350px;
+    }
+    .video ul {
+        margin: 0 -15px;
+
+        border-top: none;
+        background: #ff2b67;
+        background:    -moz-linear-gradient(top,#ff2b67 0%,#ff5e3a 100%);
+        background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#ff2b67),color-stop(100%,#ff5e3a));
+        background: -webkit-linear-gradient(top,#ff2b67 0%,#ff5e3a 100%);
+        background:      -o-linear-gradient(top,#ff2b67 0%,#ff5e3a 100%);
+        background:     -ms-linear-gradient(top,#ff2b67 0%,#ff5e3a 100%);
+        background:         linear-gradient(to bottom,#ff2b67 0%,#ff5e3a 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff2b67', endColorstr='#ff5e3a',GradientType=0 );
+    }
+
+    .video ul li {
+        float: none;
+        width: 100%;
+        border-top: 1px solid #fff;
+    }
+    .video ul li:last-child {
+        border-top: 1px solid #fff;
+    }
+    .costomers p {
+        padding-bottom: 50px;
+    }
+    .costomers table {
+        display: none;
+    }
+    .costomers .item {
+        height: auto;
+        padding: 50px 0;
+        border: solid 1px #ecf0f1;
+    }
+    .costomers .item img {
+        width: auto;
+        display: inline-block;
+    }
+    .costomers .owl-nav {
+        display: block;
+    }
+    .bottBlock .box .body h3 {
+        font-size: 36px;
+        line-height: 42px;
+    }
+    .bottBlock .box .body span {
+        display: none;
+    }
+    .pricing .pricingList {
+        margin: 0 -15px;
+    }
+    .pricing .pricingList .pricingItem {
+        border: none;
+        width: auto;
+        float: none;
+        
+    }
+    .tableBox table td span {
+        display: none;
+    }
+}
+
+@media(max-width:480px) {
+    .process ul li.line {
+        width: 35px;
+    }
+    .process ul li .txt {
+        font-size: 14px;
+    }
+    .tableBox table td {
+        font-size: 15px;
+    }
+}
+
+@media(max-width:450px) {
+    .starProjects h2 {
+        font-size: 36px;
+    }
+    .starProjects h2:before {
+        display: none;
+    }
+    .starProjects h2:after {
+        display: none;
+    }
+    .process ul li.line {
+        width: 35px;
+    }
+    .process ul li .txt {
+        font-size: 14px;
+    }
+    .process ul li {
+        display: block;
+        padding-bottom: 25px;
+    }
+    .process ul li div {
+        margin-bottom: 5px;
+    }
+    .process ul li.line {
+        display: none;
+    }
+}
+
+
+.whatcostomerssay td{
+    cursor: pointer;
+}
+
+.whatcostomerssay td:hover span{
+    display: block;
+}
+
+.whatcostomerssay td:hover > img{
+    display: none;
+}
+
+.img-featured{
+    width: 100%;
+}
+
