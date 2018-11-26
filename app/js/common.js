@@ -1,223 +1,459 @@
-jQuery(document).ready(function($) {
-    function n() {
-        s($(".cd-headline.letters").find("b")), e($(".cd-headline"))
-    }
+$(function() {
 
-    function s(n) {
-        (window.location.href.indexOf("rle") || 0 != window.location.port.length) && n.each(function() {
-            var n = $(this),
-                s = n.text().split(""),
-                e = n.hasClass("is-visible");
-            for (i in s) n.parents(".rotate-2").length > 0 && (s[i] = "<em>" + s[i] + "</em>"), s[i] = e ? '<i class="in">' + s[i] + "</i>" : "<i>" + s[i] + "</i>";
-            var t = s.join("");
-            n.html(t).css("opacity", 1)
-        })
-    }
-
-    function e(i) {
-        var n = f;
-        i.each(function() {
-            var i = $(this);
-            if (i.hasClass("loading-bar")) n = h, setTimeout(function() {
-                i.find(".cd-words-wrapper").addClass("is-loading")
-            }, u);
-            else if (i.hasClass("clip")) {
-                var s = i.find(".cd-words-wrapper"),
-                    e = s.width() + 10;
-                s.css("width", e)
-            } else if (!i.hasClass("type")) {
-                var a = i.find(".cd-words-wrapper b"),
-                    o = 0;
-                a.each(function() {
-                    var i = $(this).width();
-                    i > o && (o = i)
-                }), i.find(".cd-words-wrapper").css("width", o)
+$(document).ready(function () {
+ 
+    function Scroll_block(){
+        var scroll_top = $(document).scrollTop();
+        $(".nav__header-li-menu a").each(function(){
+            var hash = $(this).attr("href");
+            var target = $(hash);
+            if (target.position().top <= scroll_top && target.position().top + target.outerHeight() > scroll_top) {
+                $(".right-fixed-menu li.active").parent().removeClass("active");
+                $(this).parent().addClass("active");
+            } else {
+                $(this).parent().removeClass("active");
             }
-            setTimeout(function() {
-                t(i.find(".is-visible").eq(0))
-            }, n)
-        })
+        });
     }
-
-    function t(i) {
-        var n = l(i);
-        if (i.parents(".cd-headline").hasClass("type")) {
-            var s = i.parent(".cd-words-wrapper");
-            s.addClass("selected").removeClass("waiting"), setTimeout(function() {
-                s.removeClass("selected"), i.removeClass("is-visible").addClass("is-hidden").children("i").removeClass("in").addClass("out")
-            }, m), setTimeout(function() {
-                a(n, w)
-            }, v)
-        } else if (i.parents(".cd-headline").hasClass("letters")) {
-            var e = i.children("i").length >= n.children("i").length;
-            o(i.find("i").eq(0), i, e, p), d(n.find("i").eq(0), n, e, p)
-        } else i.parents(".cd-headline").hasClass("clip") ? i.parents(".cd-words-wrapper").animate({
-            width: "2px"
-        }, C, function() {
-            c(i, n), a(n)
-        }) : i.parents(".cd-headline").hasClass("loading-bar") ? (i.parents(".cd-words-wrapper").removeClass("is-loading"), c(i, n), setTimeout(function() {
-            t(n)
-        }, h), setTimeout(function() {
-            i.parents(".cd-words-wrapper").addClass("is-loading")
-        }, u)) : (c(i, n), setTimeout(function() {
-            t(n)
-        }, f))
-    }
-
-    function a(i, n) {
-        i.parents(".cd-headline").hasClass("type") ? (d(i.find("i").eq(0), i, !1, n), i.addClass("is-visible").removeClass("is-hidden")) : i.parents(".cd-headline").hasClass("clip") && i.parents(".cd-words-wrapper").animate({
-            width: i.width() + 10
-        }, C, function() {
-            setTimeout(function() {
-                t(i)
-            }, b)
-        })
-    }
-
-    function o(i, n, s, e) {
-        if (i.removeClass("in").addClass("out"), i.is(":last-child") ? s && setTimeout(function() {
-                t(l(n))
-            }, f) : setTimeout(function() {
-                o(i.next(), n, s, e)
-            }, e), i.is(":last-child") && $("html").hasClass("no-csstransitions")) {
-            var a = l(n);
-            c(n, a)
-        }
-    }
-
-    function d(i, n, s, e) {
-        i.addClass("in").removeClass("out"), i.is(":last-child") ? (n.parents(".cd-headline").hasClass("type") && setTimeout(function() {
-            n.parents(".cd-words-wrapper").addClass("waiting")
-        }, 200), s || setTimeout(function() {
-            t(n)
-        }, f)) : setTimeout(function() {
-            d(i.next(), n, s, e)
-        }, e)
-    }
-
-    function l(i) {
-        return i.is(":last-child") ? i.parent().children().eq(0) : i.next()
-    }
-
-    function r(i) {
-        return i.is(":first-child") ? i.parent().children().last() : i.prev()
-    }
-
-    function c(i, n) {
-        i.removeClass("is-visible").addClass("is-hidden"), n.removeClass("is-hidden").addClass("is-visible")
-    }
-    var f = 2e3,
-        h = 3e3,
-        u = h - 3e3,
-        p = 25,
-        w = 75,
-        m = 200,
-        v = m + 100,
-        C = 400,
-        b = 1e3;
-    n()
-}), jQuery(document).ready(function($) {
-    function i(i) {
-        var s = i.width() / 2,
-            e = i.offset().left + s,
-            t = i.offset().top + s - $(window).scrollTop(),
-            a = n(t, e, s, $(window).height(), $(window).width());
-        return i.css("position", "fixed").velocity({
-            top: t - s,
-            left: e - s,
-            translateX: 0
-        }, 0), a
-    }
-
-    function n(i, n, s, e, t) {
-        var a = n > e / 2 ? n : e - n,
-            o = i > t / 2 ? i : t - i;
-        return Math.ceil(Math.sqrt(Math.pow(a, 2) + Math.pow(o, 2)) / s)
-    }
-
-    function s(i, n, s) {
-        i.velocity({
-            scale: n
-        }, 400, function() {
-            $("body").toggleClass("overflow-hidden", s), s ? i.parents(".cd-section").addClass("modal-is-visible").end().off("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend") : i.removeClass("is-visible").removeAttr("style").siblings('[data-type="modal-trigger"]').removeClass("to-circle")
-        })
-    }
-
-    function e() {
-        var i = $(".cd-section.modal-is-visible").find(".cd-modal-bg"),
-            s = i.width() / 2,
-            e = i.siblings(".btn").offset().top + s - $(window).scrollTop(),
-            t = i.siblings(".btn").offset().left + s,
-            a = n(e, t, s, $(window).height(), $(window).width());
-        i.velocity({
-            top: e - s,
-            left: t - s,
-            scale: a
-        }, 0)
-    }
-
-    function t() {
-        var i = $(".cd-section.modal-is-visible");
-        i.removeClass("modal-is-visible").one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend", function() {
-            s(i.find(".cd-modal-bg"), 1, !1)
-        }), i.parents(".no-csstransitions").length > 0 && s(i.find(".cd-modal-bg"), 1, !1)
-    }
-    $('[data-type="modal-trigger"]').on("click", function() {
-        var n = $(this),
-            e = i(n.next(".cd-modal-bg"));
-        n.addClass("to-circle"), n.next(".cd-modal-bg").addClass("is-visible").one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend", function() {
-            s(n.next(".cd-modal-bg"), e, !0)
-        }), n.parents(".no-csstransitions").length > 0 && s(n.next(".cd-modal-bg"), e, !0)
-    }), $(".cd-section .cd-modal-close").on("click", function() {
-        t()
-    }), $(document).keyup(function(i) {
-        "27" == i.which && t()
-    }), $(window).on("resize", function() {
-        $(".cd-section.modal-is-visible").length > 0 && window.requestAnimationFrame(e)
-    })
-}), $(function() {
-    $(".page-scroll a").bind("click", function(i) {
-        var n = $(this);
-        $("html, body").stop().animate({
-            scrollTop: $(n.attr("href")).offset().top
-        }, 1500, "easeInOutExpo"), i.preventDefault()
-    })
-
+ 
+ 
+    $(document).on("scroll", Scroll_block);
+ 
+    $(".nav__link-menu, .logo, .buy-token-link").click(function(){
+ 		$('.nav__header-li-menu').removeClass("active");
+        $(document).off("scroll");
+        $(".nav__header-li-menu.active").parent().removeClass("active");
+        $(this).parent().addClass("active");
+        var hash = $(this).attr("href");
+        var target = $(hash);
+ 
+        $("html, body").animate({
+            scrollTop: target.offset().top
+        }, 1200, function(){
+            window.location.hash = hash;
+            $(document).on("scroll", Scroll_block);
+        });
+ 
+    });
+ 
 });
-$('.sl').slick({
-  dots: false,
-  infinite: true,
-  speed: 900,
-  slidesToShow: 4,
+$(window).bind('wheel', function(event) {
+	var wid = $(window).width()
+if (event.originalEvent.wheelDelta >= 0 && wid > 1025 && $('.appear-block').css('display') == "none") {
+    window.scrollBy(0, -window.innerHeight)
+}
+else if (wid > 1025 && $('.appear-block').css('display') == "none") {
+    window.scrollBy(0, window.innerHeight)
+}
+});
+$(document).ready(function(){
+	$(".questions__punct").click(function(){
+		$('.questions__punct').removeClass('questions__active');
+		$(this).addClass('questions__active');
+	})
+})
+$(document).ready(function(){
+	$(".change-point__big-circle").click(function(){
+		$('.change-point__big-circle').removeClass('active-circle');
+		$(this).addClass('active-circle');
+	})
+})
+$(document).ready(function(){
+	var wid = $(window).width()
+	if(wid > 480){
+	$('.questions__punct-three').click(function(){
+		$('.change-text-questions').css('display', 'none');
+		$('.change-text-questions3').css('display', 'block');
+	});
+	$('.questions__punct-one').click(function(){
+		$('.change-text-questions').css('display', 'none');
+		$('.change-text-questions1').css('display', 'block');
+	});
+	$('.questions__punct-two').click(function(){
+		$('.change-text-questions').css('display', 'none');
+		$('.change-text-questions2').css('display', 'block');
+	});
+	$('.questions__punct-four').click(function(){
+		$('.change-text-questions').css('display', 'none');
+		$('.change-text-questions4').css('display', 'block');
+	});} else if (wid <= 480){
+	$('.questions__punct-three').click(function(){
+		$('.questions__toggle-text3').toggle();
+	});
+	$('.questions__punct-one').click(function(){
+		$('.questions__toggle-text1').toggle();
+	});
+	$('.questions__punct-two').click(function(){
+		$('.questions__toggle-text2').toggle();
+	});
+	$('.questions__punct-four').click(function(){
+		$('.questions__toggle-text4').toggle();
+	});
+	}
+})
+
+$(document).ready(function(){
+	$('.change-point__big-circle-one').click(function(){
+		$('.how-it-work-img').css('display', 'none');
+		$('.wrapper-text-how').css('display', 'none');
+		$('.how-it-work1').css('display', 'block');
+		$('.wrapper-text-how1').css('display', 'block')
+	})
+	$('.change-point__big-circle-2').click(function(){
+		$('.how-it-work-img').css('display', 'none');
+		$('.wrapper-text-how').css('display', 'none');
+		$('.how-it-work2').css('display', 'block');
+		$('.wrapper-text-how2').css('display', 'block')
+	})
+	$('.change-point__big-circle-3').click(function(){
+		$('.how-it-work-img').css('display', 'none');
+		$('.wrapper-text-how').css('display', 'none');
+		$('.how-it-work3').css('display', 'block');
+		$('.wrapper-text-how3').css('display', 'block')
+	})
+	$('.change-point__big-circle-4').click(function(){
+		$('.how-it-work-img').css('display', 'none');
+		$('.wrapper-text-how').css('display', 'none');
+		$('.how-it-work4').css('display', 'block');
+		$('.wrapper-text-how4').css('display', 'block')
+	})
+	$('.change-point__big-circle-5').click(function(){
+		$('.how-it-work-img').css('display', 'none');
+		$('.wrapper-text-how').css('display', 'none');
+		$('.how-it-work5').css('display', 'block');
+		$('.wrapper-text-how5').css('display', 'block')
+	})
+	$('.change-point__big-circle-6').click(function(){
+		$('.how-it-work-img').css('display', 'none');
+		$('.wrapper-text-how').css('display', 'none');
+		$('.how-it-work6').css('display', 'block');
+		$('.wrapper-text-how6').css('display', 'block')
+	})
+	$('.change-point__big-circle-7').click(function(){
+		$('.how-it-work-img').css('display', 'none');
+		$('.wrapper-text-how').css('display', 'none');
+		$('.how-it-work7').css('display', 'block');
+		$('.wrapper-text-how7').css('display', 'block')
+	})
+})
+$(document).ready(function(){
+	$('.button-solutions').click(function(){
+		$('.button-solutions').css('background-color', '#9194a5');
+		$('.problem-solution').css('display', 'none');
+		$(this).css('background-color', '#f5f5f5');
+	})
+	$('.traditional-system').click(function(){
+		$('.problem-solution1').css('display', 'block')
+	})
+	$('.CyptoLoan').click(function(){
+		$('.problem-solution2').css('display', 'block')
+	})
+})
+$(document).ready(function(){
+$('.sl-team').slick({
+  dots: true,
+  infinite: false,
+  speed: 200,
+  slidesToShow: 3,
   slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 2000,
+  draggable: true,
   responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 1200,
       settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: false,
         dots: true
       }
     },
     {
-      breakpoint: 600,
+      breakpoint: 780,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToScroll: 1,
+        infinite: false,
+        dots: true
       }
     },
     {
       breakpoint: 480,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        dots: true,
+        arrows: false,
+        centerMode: true,
+        centerPadding: "10%",
+        infinite: true
       }
     }
     // You can unslick at a given breakpoint now by adding:
     // settings: "unslick"
     // instead of a settings object
-  ]
+    ]
+  
 });
+});
+$(document).ready(function(){
+$('.about-us').slick({
+  dots: true,
+  infinite: false,
+  speed: 200,
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  draggable: true,
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: false,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 780,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: false,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: false,
+        centerMode: true,
+        centerPadding: "10%"
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+    ]
+  
+});
+});
+$(document).ready(function(){
+$('.grafic').slick({
+  dots: false,
+  infinite: false,
+  speed: 200,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  draggable: true,
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: false,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 780,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: false,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: false,
+        centerMode: true,
+        centerPadding: "10%",
+        infinite: false
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+    ]
+  
+});
+});
+$(document).ready(function(){
+$('.how-it-work-s').slick({
+  dots: false,
+  infinite: false,
+  speed: 200,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  draggable: true,
+  responsive: [
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: false,
+        centerMode: true,
+        centerPadding: "8%",
+        infinite: false
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+    ]
+  
+});
+});
+$(document).ready(function(){
+			var touch = $('#touch-menu');
+		    var menu = $('.nav');
+		    var wid = $(window).width();
+			var hig = $(window).height();
+  $(touch).click(function(){
+    $(menu).animate({
+      width: "toggle"
+    });
+  });
+  if (wid <= 1025 || hig <= 625) {
+  $('.nav__link-menu').click(function(){
+    $(menu).animate({
+      width: "toggle"
+    })
+    $('.container-button').removeClass('change')
+  });}
+
+		    $(window).resize(function(){
+		        var wid = $(window).width();
+		        if(wid > 1025 && menu.is(':hidden')) {
+		            menu.removeAttr('style');
+		        }
+		    });
+        $('.a_remove').on('click', function(e){
+  menu.removeAttr('style');
+        $(".container-button").removeClass('change');
+});
+});
+
+
+$(document).ready(function(){
+var wid = $(window).width();
+var hig = $(window).height();
+if (wid <= 1025 || hig <= 630) {
+$(window).scroll(function() {
+    var $block = $('.header'); // ID шапки
+    var set_top = $('.header').offset().top;
+    if ($(window).scrollTop() > 55) {
+        $block.addClass('fixed');
+    } else if ($(window).scrollTop() <= 55){
+        $block.removeClass('fixed'); 
+    } 
+});
+}; 
+});
+$(document).ready(function() {
+
+	//E-mail Ajax Send
+	$("#form").submit(function() { //Change
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "../mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			alert('Запрос отправлен')
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	});
+
+});
+$(document).ready(function(){
+	$.validator.addMethod(
+        "alphabetsOnly",
+        function(value, element, regexp) {
+            var re = new RegExp(regexp);
+            return this.optional(element) || re.test(value);
+        },
+        "Имя не должно содержать цифры"
+);
+$(".name").rules("add", {alphabetsOnly: "^[a-zA-Z'.\\s]$" })
+$(function(){
+ $('#form').validate({
+  rules: {
+ name: {
+ required: true,
+ minlength: 2,
+ alphabetsOnly: "^[a-zA-Z'.\\s]$"
+ },
+ tel: {
+ 	minlength: 10
+ }
+  },
+  messages: {
+ name: {
+ required: "Поле 'Имя' обязательно к заполнению",
+ minlength: "Введите не менее 2-х"
+ },
+ tel: {
+ minlength: "Введите корректный номер"
+ },
+ email: {
+ required: "Поле 'Email' обязательно к заполнению",
+ email: "Введите корректный email" 
+ },
+ url: "Поле 'Сайт' обязательно к заполнению"
+  }
+ });
+}); 
+});
+$(document).ready(function(){
+	$('.wrapper-screen__fiat-money').click(function()
+	{
+		$('.appear-block').css('display', 'block')
+	})
+	$('.close-appear').click(function(){
+		$('.appear-block').css('display', 'none')
+	})
+})
+$(document).ready(function(){
+  $('.block-confident__text-politica').click(function()
+  {
+    $('.politic-appears').css('display', 'block')
+  })
+  $('.close-appear').click(function(){
+    $('.politic-appears').css('display', 'none')
+  })
+})
+$(document).ready(function(){
+	$('.wrapper-screen__cripto-block').click(function()
+	{
+		$('.appear-block-cripto').css('display', 'block')
+	})
+	$('.close-appear-cripto').click(function(){
+		$('.appear-block-cripto').css('display', 'none')
+	})
+})
+$(document).ready(function(){
+	$('.more-information__text').click(function()
+	{
+		$('.appear-block-video').css('display', 'block')
+	})
+	$('.close-appear-video').click(function(){
+		$('.appear-block-video').css('display', 'none')
+	})
+})
+});
+
