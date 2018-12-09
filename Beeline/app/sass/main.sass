@@ -1,0 +1,775 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	background-color: #f2f2f2
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+button
+	cursor: pointer
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+.clearfix:after
+	content: ''
+	display: table
+	clear: both
+
+.header
+	height: 44px
+	background-color: #4d4d4d
+
+.line-menu
+	background-color: #f2f2f2
+	border: 1px #cdcdcd solid
+	border-left: none
+	border-right: none
+
+.header-information
+	margin-left: auto
+	margin-right: auto
+	display: inline-block
+
+.header-information__punction
+	color: #eef3ca
+	float: left
+	padding: 10px 11px
+	font-size: 14px
+	white-space: nowrap
+
+.header-information__punction:hover
+	background-color: #676767
+	cursor: pointer
+
+.header-information__punction_size
+	width: 130px
+
+.logo
+	margin-bottom: 10px
+	display: inline-block
+	margin-right: 10px
+	
+.logo__circle-beeline
+	width: 38px
+	height: 38px
+	border-radius: 20px
+	background-image: url('../img/logo-beeline.png')
+	background-size: cover
+	margin-left: 1px
+	margin-top: 15px
+	float: left
+
+.logo__text-beeline
+	float: left
+	margin-left: 6px
+	margin-top: 17px
+	font-size: 20px
+	letter-spacing: -0.9px
+
+.line-menu__list-menu
+	list-style: none
+	color: #fed602
+	padding: 0px
+	float: left
+	font-size: 14px
+	margin-top: 22px
+	position: relative
+	left: -48px
+
+.line-menu__list-menu li
+	float: left
+	padding-left: 25px
+	white-space: nowrap
+
+.line-menu__list-menu li a
+	color: inherit
+	font-size: inherit
+
+.forum-line
+	height: 63px
+	border: 1px #e8dedc solid
+	border-left: none
+	border-right: none
+
+.menu-animation
+	color: #000000
+	float: left
+
+.menu-animation__text
+	font-size: 14px
+	margin-top: 19px
+	float: left
+
+.menu-animation__bottom-arrow
+	width: 12px
+	height: 7px
+	float: left
+	background-image: url("../img/arrow-bottom.png")
+	background-repeat: no-repeat
+	background-size: cover
+	margin-top: 28px
+	margin-left: 2px
+
+.right-forum-text
+	float: right
+	font-size: 14px
+	color: #f3c500
+	margin-top: 17px
+
+.right-forum-text__create-theme-icon
+	float: left
+	width: 13px
+	height: 13px
+	margin-right: 3px
+	position: relative
+	top: -1px
+
+.fa-pencil-alt
+	font-size: 12px
+
+.right-forum-text__create-theme
+	float: left
+
+.right-forum-text__create-theme-text
+	float: left
+	a
+		color: inherit
+
+.right-forum-text__enter-forum
+	float: left
+	margin-left: 14px
+	a
+		color: inherit
+
+.hello-search
+	height: 240px
+	background-image: url('../img/hello-search.jpg')
+	background-repeat: no-repeat
+	background-size: cover
+	position: relative
+	padding-top: 1px
+
+.hello-search__dark-phone
+	position: absolute
+	width: 100%
+	height: 100%
+	top: 0px
+	background-color: rgba(0, 0, 0, 0.4)
+
+.hello-search__title-hello
+	color: #ffffff
+	display: block
+	font-size: 33px
+	position: relative
+	margin-top: 51px
+
+.block-search
+	display: inline-block
+	margin-top: 45px
+	position: relative
+	margin-bottom: 16px
+
+.fa-search-block
+	position: absolute
+	color: #b5b5b5
+	margin: 16px 0 0 25px
+	font-size: 12px
+
+.fa-search
+	position: relative
+	z-index: 2
+
+.block-search__input-search
+	width: 550px
+	height: 49px
+	background-color: #ffffff
+	border-radius: 5px
+	border: 0px solid
+	position: relative
+	padding-left: 42px
+
+.block-search__input-search::placeholder
+	font-size: 14px
+	color: #b5b5b5
+
+.info-question
+	border-top: 1px solid #e2e2e2
+	border-bottom: 1px solid #e2e2e2
+.number-people
+	background-color: #ffffff
+.number-people__theme-number
+	float: left
+	margin-right: 7px
+	color: #000
+	font-size: 14px
+	position: relative
+	top: -1px
+	font-weight: bold
+.number-people__theme-name
+	float: left
+	margin-right: 19px
+	color: #a0aaab
+	font-size: 13px
+
+.number-people__answers-number
+	float: left
+	margin-right: 7px
+	color: #000
+	font-size: 14px
+	position: relative
+	top: -1px
+	font-weight: bold
+.number-people__answers-name
+	float: left
+	margin-right: 19px
+	color: #a0aaab
+	font-size: 13px
+.number-people__participants-number
+	float: left
+	margin-right: 7px
+	color: #000
+	font-size: 14px
+	position: relative
+	top: -1px
+	font-weight: bold
+.number-people__participants-name
+	float: left
+	margin-right: 19px
+	color: #a0aaab
+	font-size: 14px
+
+.number-people__stat
+	margin-top: 20px
+	margin-bottom: 22px
+.number-people__online-name
+	float: right
+	color: #a9b0c0
+	font-size: 14px
+	margin-right: -12px
+.number-people__online-photo
+	float: right
+.online-photo-all
+	width: 26px
+	height: 26px	
+	border-radius: 25px
+	background-size: cover
+	border: 1px solid #dedede
+.close-here
+	position: relative
+	.fa-times
+		position: absolute
+		top: 30px
+		right: -10px
+		font-size: 20px
+		color: #aeaeb0
+		cursor: pointer
+.online-photo-1
+	float: right
+	background-image: url('../img/people-1.jpg')
+	position: relative
+	z-index: 5
+.online-photo-2
+	float: right
+	background-image: url('../img/people-2.jpg')
+	position: relative
+	z-index: 4
+	right: -6px
+.online-photo-3
+	float: right
+	background-image: url('../img/people-3.jpg')
+	position: relative
+	z-index: 3
+	right: -12px
+.online-photo-4
+	float: right
+	background-image: url('../img/people-4.jpg')
+	position: relative
+	z-index: 2
+	right: -18px
+.online-photo-5
+	float: right
+	background-image: url('../img/people-5.jpg')
+	position: relative
+	right: -24px
+.number-people__online
+	margin-top: 20px
+.info-question 
+	background-color: #f2f2f2
+.info-question__text-check
+	width: 23px
+	height: 23px
+	background-color: #fcdf05
+	border-radius: 25px
+	float: left
+	margin-top: 19px
+	background-image: url("../img/checkmark.png")
+	background-repeat: no-repeat
+	background-size: 70%
+	background-position: 4px 4px
+.info-question__text-description
+	float: left
+	font-size: 14px
+	margin-left: 10px
+	margin-right: 15px
+	margin-top: 18px
+.info-question__text
+	margin-bottom: 20px
+	margin-top: 10px
+	float: left
+.info-question__button-element
+	background-color: #fdd100
+	border: 0
+	width: 135px
+	height: 50px
+	border-radius: 25px
+	font-size: 14px
+	margin-bottom: 16px
+.info-question__button
+	float: right
+	margin-top: 14px
+.info-question__text-float
+	float: left
+.posts-tutorial
+	background-color: #f2f2f2
+	position: relative
+.posts-tutorial__about-comunity
+	background-color: #fff
+	padding: 0
+	height: 272px
+	width: 358px
+	float: left
+	margin-right: 18px
+	border-color: #dfe0e4
+.block-forum-right
+	height: 35px
+	width: 70px
+	background-color: #ffd506
+	position: absolute
+	top: 70px
+	right: -18px
+	font-size: 14px
+	text-align: center
+	padding-top: 5px
+	transform: rotate(-90deg)
+	display: none
+	z-index: 100000000
+.about-comunity-tutorial
+	margin-right: 0px
+.abot-comunity__img 
+	height: 160px
+	width: 100%
+	background-image: url('../img/about-community.jpg')
+	background-repeat: no-repeat
+	background-size: cover
+.about-comunity__review
+	.fa-thumbs-up
+		color: #000
+		float: left
+		margin-right: 10px
+		position: relative
+		top: 4px
+	.fa-comment
+		color: #000
+		float: left
+		margin-right: 10px
+		position: relative
+		top: 4px
+
+.about-comunity__text
+	margin-top: 15px
+	margin-left: 25px
+	font-weight: bold
+.about-comunity__review
+	margin-top: 32px
+	margin-left: 25px
+	font-size: 13px
+	color: #929294
+.see-more
+	background-color: #fdd100
+	text-align: center
+	padding: 7px 0px
+	font-size: 14px
+	border-radius: 20px
+	border: 0px
+	width: 90%
+	margin-top: 6px
+	display: none
+.about-comunity__review-like
+	float: left
+	margin-right: 30px
+.posts-tutorial__about-comunity
+	margin-top: 38px
+	border: 1px solid #e2e2e2
+.abot-comunity__img-learning
+	background-image: url('../img/img-learning.jpg')
+.abot-comunity__img-lower
+	background-image: url('../img/loewer-comunity.jpg')
+.about-comunity__review-learning
+	margin-top: 5px
+.about-comunity__review-lower
+	margin-top: 5px
+
+.block-person-review
+	width: 100%
+	border: 1px solid #e1e1e1
+	background-color: #ffffff
+	margin-bottom: 72px
+
+.block-one-review
+	border-bottom: 1px #e1e1e1 solid
+	.block-forum-right
+		top: 180px
+
+.who-it
+	margin-left: 18px
+	margin-top: 18px
+
+.avatar
+	width: 40px
+	height: 40px
+	border-radius: 30px
+	background-color: yellow
+	float: left
+
+.name-review
+	float: left
+	font-size: 14px
+	margin-top: 3px
+	margin-left: 16px
+
+.status-review
+	float: left
+	font-size: 14px
+	margin-top: 3px
+	margin-left: 5px
+	color: #b5a8af
+
+.block-base-question
+	margin-left: 74px
+	position: relative
+	top: -10px
+
+.title-question
+	font-weight: bold
+	display: inline
+
+.status-question
+	display: inline-block
+	position: relative
+	top: 5px
+	border-radius: 15px
+	width: 15px
+	height: 15px
+	background-color: green
+	margin-left: 10px
+	margin-top: 5px
+
+.text-quetion-full
+	font-size: 14px
+	margin-top: 4px
+	width: 100%
+	float: left
+
+.card
+	color: #fcdd00
+	font-size: 14px
+	margin-top: 14px
+	float: left
+
+.next-page
+	height: 50px
+	background-color: #fff
+
+.wrapper-page
+	display: inline-block
+	margin-top: 10px
+	a
+		font-size: 14px
+		color: #000
+		margin-left: 15px
+	a:first-child
+		margin-left: 0px
+
+.choice-category
+	margin-bottom: 14px
+	margin-top: 12px
+	a
+		color: #a4acb7
+		margin-left: 17px
+	a:first-child
+		margin-left: 0px
+	.active-category
+		color: #000
+		border-bottom: 1px #fed100 solid
+		text-decoration: none
+
+.block-right-content
+	width: 315px
+	margin-left: 15px
+
+.block-most-like
+	margin-top: 51px
+.block-get-like
+	margin-top: 40px
+	.like-one-person
+		margin-bottom: 7px
+
+.title-most-like
+	font-weight: bold
+
+.like-one-person
+	padding-top: 10px
+	width: 100%
+	margin-bottom: 15px
+
+.wrapper-gj
+	float: left
+	.name-review
+		margin-top: -3px
+	.status-review
+		clear: left
+		margin-left: 16px
+		margin-top: -2px
+
+.wrapper-get
+	padding-left: 40px
+	.name-review
+		float: none
+		margin-top: -3px
+
+	.status-review
+		float: none
+
+.block-get-like .like-one-person .avatar
+	width: 45px
+	height: 45px
+
+.see-all-order
+	font-size: 14px
+	color: #000000
+
+.see-all-order:hover
+	color: #000000
+		
+.wrapper-theme
+	background-color: #ffffff
+	font-size: 14px
+	display: inline-block
+	border: 1px solid #e1e1e1
+	padding: 4px 8px
+	margin-bottom: 16px
+	margin-right: 3px
+
+.popular-theme
+	margin-bottom: 13px
+
+.avatar-one
+	background-image: url('../img/people-1.jpg')
+	background-size: cover
+.avatar-two
+	background-image: url('../img/people-2.jpg')
+	background-size: cover
+.avatar-three
+	background-image: url('../img/people-3.jpg')
+	background-size: cover
+.avatar-thour
+	background-image: url('../img/people-4.jpg')
+	background-size: cover
+.avatar-five
+	background-image: url('../img/people-5.jpg')
+	background-size: cover
+.avatar-order
+	background-image: url('../img/order.jpg')
+	background-size: cover
+
+.statist-review-text
+	float: left
+	color: #aeb9b3
+.statist-review-icon
+	float: left
+	margin-right: 5px
+.statist-review
+	margin-top: 71px
+	margin-bottom: 13px
+	font-size: 14px
+	i
+		position: relative
+		top: 5px
+.statist-review-avatar 
+	width: 21px
+	height: 21px
+	background-image: url('../img/people-1.jpg')
+	background-size: cover
+	border-radius: 10px
+.statist-review-people
+	float: left
+	margin-left: -5px
+.statist-review-avatar
+	float: left
+.statist-review-avatar-text
+	float: left
+	margin-left: 7px
+	color: #aeb9b3
+.statist-review-text
+	margin-right: 19px
+.statist-review-fix 
+	margin-top: 93px
+.status-question-check
+	position: relative
+	top: -7px
+	color: #fff
+	font-size: 10px
+	left: 2px
+//footer
+.footer-beeline-logo
+	width: 45px
+	height: 45px
+	float: left
+.footer-top
+	width: 100%
+	background-color: #4d4d4d
+	box-shadow: 0px 6px 17px #000
+	position: relative
+
+.footer-name-logo
+	color: #ffffff
+	font-size: 21px
+	margin-left: 10px
+	float: left
+	padding-top: 5px
+.footer-logo
+	margin-top: -6px
+.logo-sign
+	color: #ffffff
+	font-size: 6px
+	float: left
+	margin-top: 17px
+.footer-top-line
+	padding-top: 42px	
+	margin-bottom: 11px
+.footer_middle-line
+	margin-bottom: -3px
+.footer-top-line .url-footer
+	font-size: 14px
+	padding: 0px
+	color: #9f9fa9
+	position: relative
+	top: 2px
+.url-footer-left
+	margin-left: 54px
+.url-footer-right
+	margin-left: 7px
+.url-footer
+	color: #9f9fa9
+.list-footer 
+	list-style-type: none
+	padding: 0
+.block-url-footer
+	padding: 0px
+.name-bottom-footer
+	color: #deedff
+	font-size: 15px
+	margin-left: 18%
+	margin-right: auto
+	padding-bottom: 2px
+.name-middle-footer
+	color: #9f9fa9
+	font-size: 13px
+	margin-top: 4px
+.footer-bottom-line
+	margin-top: 37px
+	padding: 0px
+.footer-bottom-line .url-footer 
+	font-size: 12px
+	margin-left: 18%
+	margin-right: auto
+	line-height: 1.5
+	color: #9f9fa9
+.footer-bottom-line ul
+	line-height: 1.05
+.footer-location-map
+	font-size: 12px
+	margin-left: 12px
+	color: #dbf8fe
+.footer-map
+	margin-top: -13px
+.social-icon
+	margin-top: 49px
+	margin-bottom: 45px
+.icon-footer-bottom
+	font-size: 18px
+	margin-right: 18px
+	margin-left: 14px
+	color: #fff
+.footer-bottom
+	background-color: #313131
+.list-footer-bottom-line
+	margin-bottom: 12px
+.list-footer-one
+	margin-left: 39px
+.list-footer-two
+	margin-left: 22px
+.list-footer-three
+	margin-left: 4px
+.icon-footer-vk
+	margin-left: 14px
+.icon-footer-youtube
+	margin-left: 6px
+.icon-footer-ok
+	margin-left: 17px
+.icon-footer-instagram
+	margin-right: 17px
+.icon-footer-telegram
+	font-size: 21px
+	margin-left: 14px
+.icon-footer-skype
+	margin-left: 12px
+	font-size: 21px
+.footer_icon-download
+	margin-top: 33px
+	margin-left: -49px
+.footer_icon-download-logo
+	display: block
+.footer__fotter-bottom-one
+	margin-top: -4px
+.download-app
+	margin-left: 51px
+	margin-top: 8px
+.download-app a
+	float: left
+	margin-right: 9px
+	margin-bottom: 5px
+
+@import "media" // Always at the end
